@@ -119,14 +119,13 @@
     </div>
 
     <div class="section">
-        <h2>Project Details</h2>
-<h3>Phishing Email Analysis Project</h3>
+        <h3>Phishing Email Analysis Project</h3>
 <p>
-Analyzed phishing emails using Google Admin Toolbox and VirusTotal by investigating SPF, DKIM, and DMARC failures, spoofed domains, suspicious sender IPs, and phishing indicators.
+Analyzed phishing emails using Google Admin Toolbox and VirusTotal by investigating SPF, DKIM, and DMARC failures, suspicious sender IPs, and phishing indicators.
 </p>
 
 <p>
-<a href="https://github.com/fhariyaz0802-dev/phishing-email-analysis-project">
+<a href="https://github.com/fhariyaz0802-dev/phishing-email-analysis-project" target="_blank">
 View Project on GitHub
 </a>
 </p>
@@ -138,7 +137,7 @@ Performed DNS traffic analysis using Wireshark to investigate failed DNS lookups
 </p>
 
 <p>
-<a href="https://github.com/fhariyaz0802-dev/Threat-Hunting-Wireshark">
+<a href="https://github.com/fhariyaz0802-dev/Threat-Hunting-Wireshark" target="_blank">
 View Project on GitHub
 </a>
 </p>
@@ -150,7 +149,7 @@ Built a SOC Analyst Home Lab using Splunk Cloud to detect failed login attempts,
 </p>
 
 <p>
-<a href="https://github.com/fhariyaz0802-dev/SOC-Analyst-Home-Lab-Splunk">
+<a href="https://github.com/fhariyaz0802-dev/SOC-Analyst-Home-Lab-Splunk" target="_blank">
 View Project on GitHub
 </a>
 </p>
