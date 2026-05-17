@@ -15,17 +15,31 @@
         h1 {
             color: #0a66c2;
             font-size: 42px;
+            margin-bottom: 5px;
         }
 
         h2 {
-            color: #1d4e89;
-            border-bottom: 2px solid #0a66c2;
+            color: #084c8d;
+            border-bottom: 2px solid #dbeafe;
             padding-bottom: 5px;
             margin-top: 30px;
         }
 
+        h3 {
+            color: #0a66c2;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
         ul {
-            padding-left: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            list-style-position: inside;
         }
 
         li {
@@ -34,10 +48,15 @@
 
         .section {
             background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 2px 8px rgba(0,0,0,0.08);
+            padding: 25px;
+            margin-top: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .highlight {
+            color: #0a66c2;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -45,15 +64,13 @@
 <body>
 
     <h1>Fhariyazunnisa Abdul</h1>
-    <h2>Aspiring Cybersecurity Analyst</h2>
+    <h2>Cybersecurity Analyst | SOC Analyst | Information Security Analyst</h2>
 
-    <div class="section">
-        <p>
-            Passionate about SOC operations, Threat Detection, SIEM, Splunk,
-            Cloud Security, Vulnerability Management, Threat Hunting,
-            and Risk Management.
-        </p>
-    </div>
+    <p>
+        Passionate about SOC operations, Threat Detection, SIEM, Splunk,
+        Cloud Security, Vulnerability Management, Threat Hunting,
+        and Risk Management.
+    </p>
 
     <div class="section">
         <h2>Skills</h2>
@@ -79,8 +96,58 @@
             <li>Google Cloud – Introduction to Security Principles in Cloud Computing</li>
             <li>TryHackMe – Defensive Toolsmith</li>
             <li>TryHackMe – Pre Security Certificate</li>
+            <li>CyberSecurity Essentials</li>
+            <li>Introduction to Packet Tracer</li>
+            <li>Palo Alto Networks – AICTE Cyber Security Virtual Internship</li>
             <li>AWS Academy Cloud Foundations</li>
+            <li>CCNAv7: Introduction to Networks</li>
+            <li>Foundations of Cybersecurity</li>
         </ul>
+    </div>
+
+    <div class="section">
+        <h2>Projects</h2>
+        <ul>
+            <li>Cybersecurity Virtual Internship – Palo Alto Networks</li>
+            <li>SOC Alert Monitoring Project</li>
+            <li>Cloud Security Risk Assessment</li>
+            <li>SOC Analyst Home Lab – Splunk</li>
+            <li>Phishing Email Analysis Project</li>
+            <li>Threat Hunting with Wireshark</li>
+            <li>DNS Traffic Investigation Project</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Project Details</h2>
+
+        <h3>Phishing Email Analysis Project</h3>
+        <p>
+            Analyzed phishing emails using Google Admin Toolbox and VirusTotal
+            by investigating SPF, DKIM, and DMARC failures, spoofed domains,
+            suspicious sender IPs, and phishing indicators.
+        </p>
+
+        <h3>Threat Hunting with Wireshark</h3>
+        <p>
+            Performed DNS traffic analysis using Wireshark to investigate failed
+            DNS lookups, repeated "No such name" responses, and suspicious
+            network behavior. Identified false positives and abnormal traffic patterns.
+        </p>
+
+        <h3>SOC Analyst Home Lab – Splunk</h3>
+        <p>
+            Built a SOC Analyst Home Lab using Splunk Cloud to detect failed
+            login attempts, analyze authentication logs, create dashboards,
+            and configure security alerts using SPL.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Contact</h2>
+        <p><span class="highlight">Email:</span> your-email@example.com</p>
+        <p><span class="highlight">LinkedIn:</span> linkedin.com/in/fhariyazunnisa-abdul</p>
+        <p><span class="highlight">GitHub:</span> github.com/fhariyaz0802-dev</p>
     </div>
 
 </body>
