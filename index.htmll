@@ -1,131 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fahriyazunnisa Abdul | Cybersecurity Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f8fb;
-            color: #222;
-        }
-
-        header {
-            background: #0a3d62;
-            color: white;
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 42px;
-        }
-
-        header p {
-            font-size: 20px;
-            margin-top: 10px;
-        }
-
-        section {
-            max-width: 1000px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-
-        h2 {
-            color: #0a3d62;
-            border-bottom: 2px solid #0a3d62;
-            padding-bottom: 8px;
-        }
-
-        .card {
-            background: white;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-        }
-
-        .btn {
-            display: inline-block;
-            background: #0a3d62;
-            color: white;
-            padding: 12px 20px;
-            text-decoration: none;
-            border-radius: 8px;
-            margin-top: 10px;
-        }
-
-        .btn:hover {
-            background: #145a86;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            background: #0a3d62;
-            color: white;
-        }
-    </style>
+    <title>Fhariyazunnisa Abdul | Cybersecurity Portfolio</title>
 </head>
 <body>
 
-<header>
     <h1>Fhariyazunnisa Abdul</h1>
-    <p>Cybersecurity Analyst | SOC Analyst | Threat Hunting | Incident Response</p>
-</header>
+    <h2>Aspiring Cybersecurity Analyst</h2>
 
-<section>
-    <h2>About Me</h2>
-    <div class="card">
-        <p>
-            Master’s student in Management Information Systems with strong interest in
-            cybersecurity, threat hunting, SOC operations, phishing analysis,
-            incident response, and SIEM monitoring using Splunk and Wireshark.
-        </p>
-    </div>
-
-    <h2>Projects</h2>
-
-    <div class="card">
-        <h3>SOC Analyst Home Lab</h3>
-        <p>Built Splunk dashboards, investigated alerts, analyzed IOCs, and practiced SOC Level 1 workflows.</p>
-    </div>
-
-    <div class="card">
-        <h3>Threat Hunting – DNS Traffic Analysis</h3>
-        <p>Used Wireshark for DNS traffic monitoring, suspicious activity detection, and network investigation.</p>
-    </div>
-
-    <div class="card">
-        <h3>Phishing Email Analysis</h3>
-        <p>Analyzed phishing emails using SPF, DKIM, DMARC, VirusTotal, WHOIS, and IOC extraction.</p>
-    </div>
+    <p>
+        Passionate about SOC operations, Threat Detection, SIEM, Splunk,
+        Cloud Security, Vulnerability Management, Threat Hunting,
+        and Risk Management.
+    </p>
 
     <h2>Skills</h2>
-    <div class="card">
-        <p><strong>Tools:</strong> Splunk, Wireshark, VirusTotal</p>
-        <p><strong>Programming:</strong> Python, SQL</p>
-        <p><strong>Networking:</strong> TCP/IP, DNS, HTTP</p>
-        <p><strong>Cloud:</strong> AWS Foundations</p>
-    </div>
+    <ul>
+        <li>Security Operations Center (SOC)</li>
+        <li>Threat Intelligence</li>
+        <li>SIEM & Splunk</li>
+        <li>SOAR</li>
+        <li>Cloud Security</li>
+        <li>Incident Response</li>
+        <li>Risk Management</li>
+        <li>Wireshark</li>
+        <li>Threat Hunting</li>
+        <li>DNS Traffic Analysis</li>
+        <li>Phishing Analysis</li>
+    </ul>
+
+    <h2>Certifications</h2>
+    <ul>
+        <li>Google Cloud – Strategies for Cloud Security Risk Management</li>
+        <li>Google Cloud – Introduction to Security Principles in Cloud Computing</li>
+        <li>TryHackMe – Defensive Toolsmith</li>
+        <li>TryHackMe – Pre Security Certificate</li>
+        <li>CyberSecurity Essentials</li>
+        <li>Introduction to Packet Tracer</li>
+        <li>Palo Alto Networks – AICTE Cyber Security Virtual Internship</li>
+        <li>AWS Academy Cloud Foundations</li>
+        <li>CCNAv7: Introduction to Networks</li>
+        <li>Foundations of Cybersecurity</li>
+    </ul>
+
+    <h2>Projects</h2>
+    <ul>
+        <li>Cybersecurity Virtual Internship – Palo Alto Networks</li>
+        <li>SOC Alert Monitoring Project</li>
+        <li>Cloud Security Risk Assessment</li>
+        <li>SOC Analyst Home Lab – Splunk</li>
+        <li>Phishing Email Analysis Project</li>
+        <li>Threat Hunting with Wireshark</li>
+        <li>DNS Traffic Investigation Project</li>
+    </ul>
+
+    <h2>Project Details</h2>
+
+    <h3>Phishing Email Analysis Project</h3>
+    <p>
+        Analyzed phishing emails using Google Admin Toolbox and VirusTotal
+        by investigating SPF, DKIM, and DMARC failures, spoofed domains,
+        suspicious sender IPs, and phishing indicators.
+    </p>
+
+    <h3>SOC Analyst Project – Threat Hunting with Wireshark</h3>
+    <p>
+        Performed DNS traffic analysis using Wireshark to investigate
+        failed DNS lookups, repeated “No such name” responses, and
+        suspicious network behavior. Identified false positives and
+        potential security threats.
+    </p>
+
+    <h3>SOC Analyst Home Lab – Splunk</h3>
+    <p>
+        Built a SOC Analyst Home Lab using Splunk Cloud to detect failed
+        login attempts, analyze authentication logs, create dashboards,
+        and configure security alerts using SPL queries.
+    </p>
 
     <h2>Contact</h2>
-    <div class="card">
-        <p>Email: fhariyaz0802@gmail.com</p>
-        <p>LinkedIn: www.linkedin.com/in/fhariyazunnisa-abdul</p>
-        <p>GitHub: github.com/fhariyaz0802-dev</p>
-        <a href="#" class="btn">Download Resume</a>
-    </div>
-</section>
-
-<footer>
-    <p>© 2026 Fhariyazunnisa Abdul | Cybersecurity Portfolio</p>
-</footer>
+    <p>Email: your-email@example.com</p>
+    <p>LinkedIn: linkedin.com/in/fhariyazunnisa-abdul</p>
+    <p>GitHub: github.com/fhariyaz0802-dev</p>
 
 </body>
 </html>
