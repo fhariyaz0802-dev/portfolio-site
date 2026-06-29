@@ -12,6 +12,29 @@
             line-height: 1.6;
         }
 
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .profile-photo {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #0a66c2;
+        }
+
         h1 {
             color: #0a66c2;
             font-size: 42px;
@@ -30,59 +53,73 @@
             margin-top: 20px;
         }
 
-        p {
-            font-size: 16px;
+        section {
+            background: white;
+            padding: 25px;
+            margin-top: 25px;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
         ul {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            list-style-position: inside;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        .section {
-            background: white;
-            padding: 25px;
-            margin-top: 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-
-        .highlight {
-            color: #0a66c2;
-            font-weight: bold;
+            padding-left: 25px;
         }
 
         a {
             color: #0a66c2;
             text-decoration: none;
+            font-weight: bold;
         }
 
         a:hover {
             text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #555;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Fhariyazunnisa Abdul</h1>
-    <h2>Cybersecurity Analyst | SOC Analyst | Information Security Analyst</h2>
+<div class="container">
 
-    <p>
-        Passionate about SOC operations, Threat Detection, SIEM, Splunk,
-        Cloud Security, Vulnerability Management, Threat Hunting,
-        and Risk Management.
-    </p>
+    <div class="hero">
+        <img src="profile.jpg" alt="Fhariyazunnisa Abdul" class="profile-photo">
 
-    <div class="section">
+        <div>
+            <h1>Fhariyazunnisa Abdul</h1>
+            <h2>Cybersecurity Analyst | SOC Analyst | Information Security Analyst</h2>
+
+            <p>
+                Passionate about SOC operations, Threat Detection, SIEM, Splunk,
+                Cloud Security, Vulnerability Management, Threat Hunting, and Risk Management.
+            </p>
+        </div>
+    </div>
+
+    <section>
+        <h2>About Me</h2>
+
+        <p>
+            I recently completed my Master's in Management Information Systems and am actively seeking
+            entry-level Cybersecurity and SOC Analyst opportunities. I enjoy building hands-on security labs,
+            analyzing Windows Event Logs, investigating phishing emails, creating SIEM dashboards with Splunk,
+            and performing network traffic analysis using Wireshark.
+        </p>
+
+        <p>
+            My goal is to help organizations detect, investigate, and respond to cyber threats while continuously
+            improving my skills in security operations, cloud security, threat detection, and incident response.
+        </p>
+    </section>
+
+    <section>
         <h2>Skills</h2>
+
         <ul>
             <li>Security Operations Center (SOC)</li>
             <li>Threat Intelligence</li>
@@ -93,13 +130,15 @@
             <li>Risk Management</li>
             <li>Wireshark</li>
             <li>Threat Hunting</li>
-            <li>DNS Traffic Analysis</li>
-            <li>Phishing Analysis</li>
+            <li>Windows Event Logs</li>
+            <li>Phishing Email Analysis</li>
+            <li>Vulnerability Management</li>
         </ul>
-    </div>
+    </section>
 
-    <div class="section">
+    <section>
         <h2>Certifications</h2>
+
         <ul>
             <li>Google Cloud – Strategies for Cloud Security Risk Management</li>
             <li>Google Cloud – Introduction to Security Principles in Cloud Computing</li>
@@ -110,88 +149,58 @@
             <li>Palo Alto Networks – AICTE Cyber Security Virtual Internship</li>
             <li>AWS Academy Cloud Foundations</li>
             <li>CCNAv7: Introduction to Networks</li>
-            <li>Foundations of Cybersecurity</li>
         </ul>
-    </div>
+    </section>
 
-    <div class="section">
+    <section>
         <h2>Projects</h2>
 
         <h3>Phishing Email Analysis Project</h3>
         <p>
-            Analyzed phishing emails using Google Admin Toolbox and VirusTotal by
-            investigating SPF, DKIM, and DMARC failures, suspicious sender IPs,
-            email headers, and phishing indicators to identify potential threats.
+            Analyzed phishing emails using Google Admin Toolbox and VirusTotal by investigating SPF, DKIM,
+            and DMARC failures, suspicious sender IPs, email headers, and phishing indicators to identify
+            potential threats.
         </p>
-        <p>
-            <a href="https://github.com/fhariyaz0802-dev/phishing-email-analysis-project" target="_blank">
-                View Project on GitHub
-            </a>
-        </p>
+        <p><a href="https://github.com/fhariyaz0802-dev" target="_blank">View Project on GitHub</a></p>
 
         <h3>Threat Hunting with Wireshark</h3>
         <p>
-            Performed DNS traffic analysis using Wireshark to investigate failed DNS
-            lookups, repeated "No such name" responses, abnormal traffic patterns,
-            and network behavior for threat hunting and incident investigation.
+            Performed DNS traffic analysis using Wireshark to investigate failed DNS lookups, repeated
+            "No such name" responses, abnormal traffic patterns, and network behavior for threat hunting
+            and incident investigation.
         </p>
-        <p>
-            <a href="https://github.com/fhariyaz0802-dev/Threat-Hunting-Wireshark" target="_blank">
-                View Project on GitHub
-            </a>
-        </p>
+        <p><a href="https://github.com/fhariyaz0802-dev" target="_blank">View Project on GitHub</a></p>
 
         <h3>SOC Analyst Home Lab – Splunk</h3>
         <p>
-            Built a SOC Analyst Home Lab using Splunk Cloud to detect failed login
-            attempts, analyze authentication logs, create dashboards, write SPL
-            queries, and investigate security events in a simulated SOC environment.
+            Built a SOC Analyst Home Lab using Splunk Cloud to detect failed login attempts, analyze
+            authentication logs, create dashboards, write SPL queries, and investigate security events in
+            a simulated SOC environment.
         </p>
-        <p>
-            <a href="https://github.com/fhariyaz0802-dev/SOC-Analyst-Home-Lab-Splunk" target="_blank">
-                View Project on GitHub
-            </a>
-        </p>
+        <p><a href="https://github.com/fhariyaz0802-dev" target="_blank">View Project on GitHub</a></p>
 
         <h3>Active Directory & Windows Security Monitoring Lab</h3>
         <p>
-            Built a Windows 11 virtual machine using UTM and configured Sysmon to
-            monitor endpoint activity. Investigated Windows Security Event Logs,
-            including Event IDs 4624 (Successful Logon), 4625 (Failed Logon),
-            4672 (Special Privileges Assigned), and 4688 (Process Creation), to
+            Built a Windows 11 virtual machine using UTM and configured Sysmon to monitor endpoint activity.
+            Investigated Windows Security Event Logs, including Event IDs 4624, 4625, 4672, and 4688, to
             practice endpoint monitoring, log analysis, and SOC investigation.
         </p>
-        <p>
-            <a href="https://github.com/fhariyaz0802-dev/Active-Directory-Windows-Logs-Detection-Lab" target="_blank">
-                View Project on GitHub
-            </a>
-        </p>
+        <p><a href="https://github.com/fhariyaz0802-dev" target="_blank">View Project on GitHub</a></p>
+    </section>
 
-    </div>
-
-    <div class="section">
+    <section>
         <h2>Contact</h2>
 
-        <p>
-            <span class="highlight">Email:</span>
-            fhariyaz0802@gmail.com
-        </p>
+        <p><strong>Email:</strong> fhariyaz0802@gmail.com</p>
+        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/fhariyazunnisa-abdul" target="_blank">linkedin.com/in/fhariyazunnisa-abdul</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/fhariyaz0802-dev" target="_blank">github.com/fhariyaz0802-dev</a></p>
+    </section>
 
-        <p>
-            <span class="highlight">LinkedIn:</span>
-            <a href="https://www.linkedin.com/in/fhariyazunnisa-abdul" target="_blank">
-                linkedin.com/in/fhariyazunnisa-abdul
-            </a>
-        </p>
-
-        <p>
-            <span class="highlight">GitHub:</span>
-            <a href="https://github.com/fhariyaz0802-dev" target="_blank">
-                github.com/fhariyaz0802-dev
-            </a>
-        </p>
-
+    <div class="footer">
+        <p>© 2026 Fhariyazunnisa Abdul | Cybersecurity Portfolio</p>
     </div>
+
+</div>
 
 </body>
 </html>
