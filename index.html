@@ -1,221 +1,920 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Fhariyazunnisa Abdul - Cybersecurity Portfolio featuring SOC monitoring, Splunk SIEM, threat detection, and security projects.">
+
 <title>Fhariyazunnisa Abdul | Cybersecurity Portfolio</title>
+
 <style>
-body {
-font-family: Arial, sans-serif;
-background-color: #f4f8fb;
-color: #222;
-margin: 40px;
-line-height: 1.6;
+* {
+    box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f8fb;
+    color: #263238;
+    margin: 0;
+    line-height: 1.7;
+}
+
 .container {
-max-width: 1000px;
-margin: auto;
+    max-width: 1050px;
+    margin: auto;
+    padding: 25px;
 }
+
+nav {
+    background: white;
+    padding: 16px 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav strong {
+    color: #0a66c2;
+}
+
+nav a {
+    margin-left: 15px;
+    font-size: 14px;
+}
+
 .hero {
-display: flex;
-align-items: center;
-gap: 30px;
-padding: 30px;
-background: white;
-border-radius: 15px;
-box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
 }
+
 .profile-photo {
-width: 180px;
-height: 180px;
-border-radius: 50%;
-object-fit: cover;
-object-position: center;
-border: 5px solid #0a66c2;
-box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 4px solid #0a66c2;
 }
+
 .hero-text {
-flex: 1;
+    flex: 1;
 }
+
 h1 {
-color: #0a66c2;
-font-size: 42px;
-margin-bottom: 8px;
+    color: #0a66c2;
+    font-size: 38px;
+    margin: 0 0 10px;
 }
+
+.hero h2 {
+    border: none;
+    margin: 0 0 12px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
 h2 {
-color: #084c8d;
-border-bottom: 2px solid #dbeafe;
-padding-bottom: 6px;
-margin-top: 30px;
+    color: #084c8d;
+    border-bottom: 2px solid #dbeafe;
+    padding-bottom: 8px;
+    margin-top: 0;
+    font-size: 24px;
 }
+
 h3 {
-color: #0a66c2;
-margin-top: 22px;
+    color: #0a66c2;
+    margin-bottom: 8px;
 }
+
 p {
-font-size: 16px;
+    font-size: 15px;
 }
+
 section {
-background: white;
-padding: 25px;
-margin-top: 25px;
-border-radius: 15px;
-box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background: white;
+    padding: 30px;
+    margin-top: 25px;
+    border-radius: 15px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
+
 ul {
-padding-left: 25px;
+    padding-left: 22px;
 }
+
 li {
-margin-bottom: 8px;
+    margin-bottom: 9px;
 }
+
 a {
-color: #0a66c2;
-text-decoration: none;
-font-weight: bold;
+    color: #0a66c2;
+    text-decoration: none;
+    font-weight: 600;
 }
+
 a:hover {
-text-decoration: underline;
+    text-decoration: underline;
 }
+
+.button {
+    display: inline-block;
+    background: #0a66c2;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 7px;
+    margin: 8px 10px 0 0;
+    font-size: 14px;
+}
+
+.button:hover {
+    background: #084c8d;
+    text-decoration: none;
+}
+
+.button-outline {
+    background: white;
+    color: #0a66c2;
+    border: 1px solid #0a66c2;
+}
+
+.button-outline:hover {
+    background: #eef6ff;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.skill-box {
+    background: #f7faff;
+    padding: 18px;
+    border: 1px solid #e3edf8;
+    border-radius: 10px;
+}
+
+.skill-box h3 {
+    margin-top: 0;
+    font-size: 17px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-card {
+    border: 1px solid #e0e9f3;
+    border-radius: 12px;
+    padding: 22px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+}
+
+.project-card h3 {
+    margin-top: 5px;
+}
+
+.project-card p {
+    margin: 8px 0;
+}
+
+.project-card .project-link {
+    margin-top: auto;
+    padding-top: 15px;
+}
+
+.featured-project {
+    grid-column: 1 / -1;
+    background: #f7fbff;
+    border: 2px solid #b8d8f7;
+}
+
+.tag {
+    display: inline-block;
+    background: #eaf3ff;
+    color: #084c8d;
+    border-radius: 5px;
+    padding: 4px 9px;
+    margin: 4px 5px 4px 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.date {
+    color: #667085;
+    font-size: 14px;
+}
+
 .footer {
-text-align: center;
-margin-top: 30px;
-color: #555;
+    text-align: center;
+    margin: 30px 0;
+    color: #667085;
+    font-size: 14px;
 }
+
 @media (max-width: 768px) {
-body {
-margin: 20px;
-}
-.hero {
-flex-direction: column;
-text-align: center;
-}
-h1 {
-font-size: 34px;
-}
-.profile-photo {
-width: 150px;
-height: 150px;
-}
+    .container {
+        padding: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    nav {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-project {
+        grid-column: auto;
+    }
+
+    section {
+        padding: 22px;
+    }
 }
 </style>
 </head>
+
 <body>
+
 <div class="container">
-<div class="hero">
-<img src="profile.jpeg" alt="Fhariyazunnisa Abdul" class="profile-photo">
-<div class="hero-text">
-<h1>Fhariyazunnisa Abdul</h1>
-<h2>Cybersecurity Analyst | SOC Analyst | Information Security Analyst</h2>
-<p>
-Passionate about SOC operations, Threat Detection, SIEM,
-Splunk, Cloud Security, Vulnerability Management,
-Threat Hunting, and Risk Management.
-</p>
-</div>
-</div>
 
-<section>
+<!-- NAVIGATION -->
+
+<nav>
+    <strong>Fhariyazunnisa Abdul</strong>
+    <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HOME -->
+
+<header class="hero">
+
+    <img
+        src="profile.jpeg"
+        alt="Fhariyazunnisa Abdul"
+        class="profile-photo"
+    >
+
+    <div class="hero-text">
+
+        <h1>Fhariyazunnisa Abdul</h1>
+
+        <h2>
+            Management Information Systems Graduate |
+            Aspiring SOC Analyst
+        </h2>
+
+        <p>
+            Cybersecurity | Splunk SIEM |
+            Security Monitoring | Threat Detection
+        </p>
+
+        <p>
+            M.S. in Management Information Systems
+            from Auburn University at Montgomery,
+            May 2026.
+        </p>
+
+        <a class="button" href="#projects">
+            View My Projects
+        </a>
+
+        <a
+            class="button button-outline"
+            href="https://github.com/fhariyaz0802-dev"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            GitHub Profile
+        </a>
+
+    </div>
+
+</header>
+
+<!-- ABOUT -->
+
+<section id="about">
+
 <h2>About Me</h2>
+
 <p>
-I recently completed my Master's in Management Information Systems and am actively seeking
-entry-level Cybersecurity and SOC Analyst opportunities. I enjoy building hands-on security labs,
-analyzing Windows Event Logs, investigating phishing emails, creating SIEM dashboards with Splunk,
-and performing network traffic analysis using Wireshark.
+I graduated from Auburn University at Montgomery
+in May 2026 with a Master's degree in Management
+Information Systems. I also hold a Bachelor's
+degree in Computer Science Engineering.
 </p>
+
 <p>
-My goal is to help organizations detect, investigate, and respond to cyber threats while continuously
-improving my skills in security operations, cloud security, threat detection, and incident response.
+I have a strong interest in cybersecurity,
+information security, and security operations.
+Through academic projects, hands-on labs, and
+technical training, I have developed practical
+skills in security monitoring, log analysis,
+threat detection, and network traffic analysis.
 </p>
+
+<p>
+My projects involve Splunk, Wireshark, Sysmon,
+Windows Event Viewer, and Python. I have worked
+on brute-force detection, Windows security
+monitoring, DNS traffic analysis, phishing
+email investigation, and machine learning-based
+fraud detection.
+</p>
+
+<p>
+I also completed a 10-week cybersecurity virtual
+internship through the Palo Alto Networks
+Cybersecurity Academy (AICTE-EduSkills), where
+I studied network security, cybersecurity threats,
+and incident response processes.
+</p>
+
+<p>
+I am currently seeking entry-level opportunities
+in cybersecurity and security operations,
+particularly SOC Analyst roles, where I can
+apply my knowledge and continue developing
+my technical skills.
+</p>
+
 </section>
 
-<section>
-<h2>Skills</h2>
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2>Technical Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill-box">
+<h3>Security Operations</h3>
 <ul>
-<li>Security Operations Center (SOC)</li>
-<li>Threat Intelligence</li>
-<li>SIEM & Splunk</li>
-<li>SOAR</li>
-<li>Cloud Security</li>
-<li>Incident Response</li>
-<li>Risk Management</li>
+<li>SOC Monitoring</li>
+<li>SIEM Monitoring</li>
+<li>Splunk Enterprise and Splunk Cloud</li>
+<li>Splunk Search Processing Language (SPL)</li>
+<li>Security Log Analysis</li>
+<li>Threat Detection and Hunting</li>
+<li>Incident Response Fundamentals</li>
+</ul>
+</div>
+
+<div class="skill-box">
+<h3>Network and Endpoint Security</h3>
+<ul>
 <li>Wireshark</li>
-<li>Threat Hunting</li>
-<li>Windows Event Logs</li>
-<li>Phishing Email Analysis</li>
-<li>Vulnerability Management</li>
+<li>Network Packet Analysis</li>
+<li>DNS Traffic Analysis</li>
+<li>Windows Event Viewer</li>
+<li>Windows Security Event Logs</li>
+<li>Sysmon</li>
+<li>Firewall and VPN Concepts</li>
 </ul>
-</section>
+</div>
 
-<section>
-<h2>Certifications</h2>
+<div class="skill-box">
+<h3>Phishing and Security Analysis</h3>
 <ul>
-<li>Google Cloud – Strategies for Cloud Security Risk Management</li>
-<li>Google Cloud – Introduction to Security Principles in Cloud Computing</li>
-<li>TryHackMe – Defensive Toolsmith</li>
-<li>TryHackMe – Pre Security Certificate</li>
-<li>CyberSecurity Essentials</li>
-<li>Introduction to Packet Tracer</li>
-<li>Palo Alto Networks – AICTE Cyber Security Virtual Internship</li>
-<li>AWS Academy Cloud Foundations</li>
-<li>CCNAv7: Introduction to Networks</li>
+<li>Phishing Email Investigation</li>
+<li>Email Header Analysis</li>
+<li>SPF, DKIM and DMARC</li>
+<li>VirusTotal</li>
+<li>Indicator of Compromise Analysis</li>
+<li>Security Investigation Documentation</li>
 </ul>
-</section>
+</div>
 
-<section>
-<h2>Projects</h2>
+<div class="skill-box">
+<h3>Programming and Cloud</h3>
+<ul>
+<li>Python</li>
+<li>Pandas and NumPy</li>
+<li>Scikit-learn</li>
+<li>Machine Learning Fundamentals</li>
+<li>AWS Cloud Foundations</li>
+<li>Google Cloud Security Fundamentals</li>
+<li>Windows and Linux Fundamentals</li>
+</ul>
+</div>
 
-<h3>Phishing Email Analysis Project</h3>
-<p>
-Analyzed phishing emails using Google Admin Toolbox and VirusTotal by investigating SPF, DKIM,
-and DMARC failures, suspicious sender IPs, email headers, and phishing indicators to identify
-potential threats.
-</p>
-<p><a href="https://github.com/fhariyaz0802-dev/phishing-email-analysis-project" target="_blank">View Project on GitHub</a></p>
-
-<h3>Threat Hunting with Wireshark</h3>
-<p>
-Performed DNS traffic analysis using Wireshark to investigate failed DNS lookups, repeated
-"No such name" responses, abnormal traffic patterns, and network behavior for threat hunting
-and incident investigation.
-</p>
-<p><a href="https://github.com/fhariyaz0802-dev/Threat-Hunting-Wireshark" target="_blank">View Project on GitHub</a></p>
-
-<h3>SOC Analyst Home Lab – Splunk</h3>
-<p>
-Built a SOC Analyst Home Lab using Splunk Cloud to detect failed login attempts, analyze
-authentication logs, create dashboards, write SPL queries, and investigate security events in
-a simulated SOC environment.
-</p>
-<p><a href="https://github.com/fhariyaz0802-dev/SOC-Analyst-Home-Lab-Splunk" target="_blank">View Project on GitHub</a></p>
-
-<h3>Active Directory & Windows Security Monitoring Lab</h3>
-<p>
-Built a Windows 11 virtual machine using UTM and configured Sysmon to monitor endpoint activity.
-Investigated Windows Security Event Logs, including Event IDs 4624, 4625, 4672, and 4688,
-to practice endpoint monitoring, log analysis, and SOC investigation.
-</p>
-<p><a href="https://github.com/fhariyaz0802-dev/Active-Directory-Windows-Logs-Detection-Lab" target="_blank">View Project on GitHub</a></p>
+</div>
 
 </section>
 
-<section>
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2>Cybersecurity Projects</h2>
+
+<p>
+A collection of hands-on cybersecurity
+projects focused on security monitoring,
+threat detection, log analysis,
+network investigations, and security research.
+</p>
+
+<div class="projects-grid">
+
+<!-- PROJECT 1: NEW SPLUNK PROJECT -->
+
+<div class="project-card featured-project">
+
+<span class="tag">Latest Project</span>
+
+<h3>1. Splunk SOC Brute-Force Detection</h3>
+
+<p>
+Built a hands-on SOC monitoring lab using
+Splunk Enterprise to analyze Windows
+authentication logs and identify potential
+brute-force login activity.
+</p>
+
+<p>
+Used SPL queries to investigate failed
+login attempts (Event ID 4625), identify
+suspicious source IP addresses, targeted
+accounts, and authentication trends.
+</p>
+
+<p>
+Created a security monitoring dashboard
+and implemented a five-minute
+threshold-based detection for potential
+brute-force activity.
+</p>
+
+<div>
+<span class="tag">Splunk Enterprise</span>
+<span class="tag">SPL</span>
+<span class="tag">Windows Logs</span>
+<span class="tag">SIEM</span>
+</div>
+
+<p class="project-link">
+<a
+href="https://github.com/fhariyaz0802-dev/Splunk-SOC-Brute-Force-Detection"
+target="_blank"
+rel="noopener noreferrer"
+>
+View Project on GitHub
+</a>
+</p>
+
+</div>
+
+<!-- PROJECT 2: PHISHING EMAIL ANALYSIS -->
+
+<div class="project-card">
+
+<h3>2. Phishing Email Analysis</h3>
+
+<p>
+Analyzed suspicious emails using
+email header analysis and VirusTotal.
+Investigated SPF, DKIM, and DMARC
+authentication results, sender IP
+addresses, spoofed domains, and
+suspicious links.
+</p>
+
+<p>
+Identified potential phishing indicators
+and documented investigation findings.
+</p>
+
+<div>
+<span class="tag">VirusTotal</span>
+<span class="tag">Email Security</span>
+<span class="tag">SPF/DKIM/DMARC</span>
+</div>
+
+<p class="project-link">
+<a
+href="https://github.com/fhariyaz0802-dev/phishing-email-analysis-project"
+target="_blank"
+rel="noopener noreferrer"
+>
+View Project on GitHub
+</a>
+</p>
+
+</div>
+
+<!-- PROJECT 3: WIRESHARK -->
+
+<div class="project-card">
+
+<h3>3. Threat Hunting with Wireshark</h3>
+
+<p>
+Captured and analyzed network traffic
+using Wireshark to investigate DNS
+activity and identify unusual network
+behavior.
+</p>
+
+<p>
+Examined repeated failed DNS lookups,
+"No such name" responses, and abnormal
+query patterns as potential indicators
+of suspicious activity.
+</p>
+
+<div>
+<span class="tag">Wireshark</span>
+<span class="tag">DNS</span>
+<span class="tag">Packet Analysis</span>
+</div>
+
+<p class="project-link">
+<a
+href="https://github.com/fhariyaz0802-dev/Threat-Hunting-Wireshark"
+target="_blank"
+rel="noopener noreferrer"
+>
+View Project on GitHub
+</a>
+</p>
+
+</div>
+
+<!-- PROJECT 4: SOC HOME LAB -->
+
+<div class="project-card">
+
+<h3>4. SOC Analyst Home Lab - Splunk</h3>
+
+<p>
+Built a simulated SOC monitoring
+environment using Splunk Cloud
+to investigate authentication events
+and analyze failed login activity.
+</p>
+
+<p>
+Practiced writing SPL queries,
+creating dashboards, reviewing
+security logs, and investigating
+suspicious authentication patterns.
+</p>
+
+<div>
+<span class="tag">Splunk Cloud</span>
+<span class="tag">SPL</span>
+<span class="tag">SOC Monitoring</span>
+</div>
+
+<p class="project-link">
+<a
+href="https://github.com/fhariyaz0802-dev/SOC-Analyst-Home-Lab-Splunk"
+target="_blank"
+rel="noopener noreferrer"
+>
+View Project on GitHub
+</a>
+</p>
+
+</div>
+
+<!-- PROJECT 5: WINDOWS SECURITY -->
+
+<div class="project-card">
+
+<h3>5. Windows Security Monitoring Lab</h3>
+
+<p>
+Configured a Windows 11 virtual
+machine using UTM and installed
+Sysmon to collect endpoint and
+process activity logs.
+</p>
+
+<p>
+Analyzed Windows Security Event
+Logs and Sysmon telemetry,
+including successful logons,
+failed logons, privileged logons,
+and process creation events.
+</p>
+
+<p>
+Practiced correlating security
+events to understand user activity
+and investigate endpoint behavior.
+</p>
+
+<div>
+<span class="tag">Windows 11</span>
+<span class="tag">Sysmon</span>
+<span class="tag">Event Viewer</span>
+</div>
+
+<p class="project-link">
+<a
+href="https://github.com/fhariyaz0802-dev/Active-Directory-Windows-Logs-Detection-Lab"
+target="_blank"
+rel="noopener noreferrer"
+>
+View Project on GitHub
+</a>
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ADDITIONAL ACADEMIC PROJECT -->
+
+<section id="capstone">
+
+<h2>Academic Capstone Project</h2>
+
+<h3>Credit Card Fraud Detection Using Machine Learning</h3>
+
+<p>
+Co-developed a machine learning-based
+credit card fraud detection system
+using more than 284,000 anonymized
+transaction records.
+</p>
+
+<p>
+Used Python, Pandas, NumPy, and
+Scikit-learn for data preprocessing
+and classification. Trained and
+evaluated a Random Forest/CART
+classifier and developed a Tkinter
+interface for running predictions.
+</p>
+
+<p>
+<strong>Technologies:</strong>
+Python, Pandas, NumPy, Scikit-learn,
+Tkinter, Matplotlib
+</p>
+
+</section>
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+
+<h2>Training and Internship Experience</h2>
+
+<h3>Cybersecurity Virtual Intern</h3>
+
+<p>
+<strong>
+Palo Alto Networks Cybersecurity Academy
+(AICTE-EduSkills)
+</strong>
+</p>
+
+<p class="date">
+March 2022 - May 2022 | Remote
+</p>
+
+<ul>
+<li>
+Completed a 10-week virtual cybersecurity
+internship program.
+</li>
+<li>
+Studied common cybersecurity threats,
+attack vectors, and security principles.
+</li>
+<li>
+Learned network security concepts
+including firewalls, VPNs,
+network segmentation, and perimeter defense.
+</li>
+<li>
+Explored SOC detection, security
+monitoring, and incident response workflows.
+</li>
+</ul>
+
+</section>
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+<h2>Education</h2>
+
+<h3>Auburn University at Montgomery</h3>
+
+<p>
+<strong>
+Master of Science in Management
+Information Systems
+</strong>
+</p>
+
+<p>
+Graduated: May 2026
+</p>
+
+<p>
+GPA: 3.50 / 4.00
+</p>
+
+<h3>SRK Institute of Technology</h3>
+
+<p>
+<strong>
+Bachelor of Technology in
+Computer Science Engineering
+</strong>
+</p>
+
+<p>
+Graduated: April 2023
+</p>
+
+</section>
+
+<!-- CERTIFICATIONS -->
+
+<section id="certifications">
+
+<h2>Certifications and Training</h2>
+
+<ul>
+
+<li>
+TryHackMe - Pre Security
+</li>
+
+<li>
+TryHackMe - Defensive Toolsmith
+</li>
+
+<li>
+Google - Foundations of Cybersecurity
+</li>
+
+<li>
+Google Cloud - Cloud Security Risk Management
+</li>
+
+<li>
+Google Cloud - Security Principles
+in Cloud Computing
+</li>
+
+<li>
+AWS Academy - Cloud Foundations
+</li>
+
+<li>
+Cisco - CCNAv7 Introduction to Networks
+</li>
+
+<li>
+Cisco - Cybersecurity Essentials
+</li>
+
+<li>
+Cisco - Introduction to Cybersecurity
+</li>
+
+<li>
+Cisco - Introduction to Packet Tracer
+</li>
+
+</ul>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
 <h2>Contact</h2>
-<p><strong>Email:</strong> fhariyaz0802@gmail.com</p>
+
+<p>
+I am open to entry-level opportunities
+in cybersecurity, SOC operations,
+and information security.
+</p>
+
+<p>
+<strong>Location:</strong>
+Montgomery, Alabama, USA
+</p>
+
+<p>
+<strong>Email:</strong>
+<a href="mailto:fhariyaz0802@gmail.com">
+fhariyaz0802@gmail.com
+</a>
+</p>
+
 <p>
 <strong>LinkedIn:</strong>
-<a href="https://linkedin.com/in/fhariyazunnisa-abdul" target="_blank">
+<a
+href="https://www.linkedin.com/in/fhariyazunnisa-abdul"
+target="_blank"
+rel="noopener noreferrer"
+>
 linkedin.com/in/fhariyazunnisa-abdul
 </a>
 </p>
+
 <p>
 <strong>GitHub:</strong>
-<a href="https://github.com/fhariyaz0802-dev" target="_blank">
+<a
+href="https://github.com/fhariyaz0802-dev"
+target="_blank"
+rel="noopener noreferrer"
+>
 github.com/fhariyaz0802-dev
 </a>
 </p>
+
+<p>
+<strong>TryHackMe:</strong>
+<a
+href="https://tryhackme.com/p/fhariyazabdul"
+target="_blank"
+rel="noopener noreferrer"
+>
+tryhackme.com/p/fhariyazabdul
+</a>
+</p>
+
 </section>
 
-<div class="footer">
-<p>© 2026 Fhariyazunnisa Abdul | Cybersecurity Portfolio</p>
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<p>
+&copy; 2026 Fhariyazunnisa Abdul |
+Cybersecurity Portfolio
+</p>
+
+</footer>
+
 </div>
-</div>
+
 </body>
 </html>
+
