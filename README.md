@@ -12,7 +12,7 @@ I am an aspiring SOC Analyst with a Master's degree in Management Information Sy
 
 This portfolio showcases my hands-on cybersecurity projects, technical skills, investigation methodologies, and security documentation.
 
-**[View My Portfolio Website](https://fhariyaz0802-dev.github.io/portfolio-site/)** | **[LinkedIn](https://www.linkedin.com/in/fhariyazunnisa-abdul)** | **[GitHub](https://github.com/fhariyaz0802-dev)**
+[View My Portfolio Website](https://fhariyaz0802-dev.github.io/portfolio-site/) | [LinkedIn](https://www.linkedin.com/in/fhariyazunnisa-abdul) | [GitHub](https://github.com/fhariyaz0802-dev)
 
 ---
 
@@ -36,7 +36,7 @@ Developed a hands-on SOC monitoring project focused on detecting suspicious auth
 
 **Skills Demonstrated:**
 - SIEM Monitoring
-- Splunk Search Processing Language (SPL)
+- Search Processing Language (SPL)
 - Security Log Analysis
 - Brute-Force Detection
 - SOC Investigation
@@ -60,13 +60,13 @@ Developed a hands-on SOC investigation project using Microsoft Sentinel and KQL 
 - Detected six failed login attempts targeting the `admin` account from IP address `192.0.2.10`.
 - Investigated authentication timestamps and login patterns.
 - Correlated failed authentication events with a successful login using Event ID 4624.
-- Used KQL `join`, `summarize`, and time-based filtering to identify suspicious authentication sequences.
-- Created a professional SOC incident investigation report.
-- Documented detection queries and investigation screenshots on GitHub.
+- Used KQL `join`, `summarize`, and time-based filtering.
+- Created a SOC incident investigation report.
+- Documented detection queries and investigation screenshots.
 
 **Investigation Findings:**
 - Affected Account: `admin`
-- Source IP: `192.0.2.10` (documentation/test IP)
+- Source IP: `192.0.2.10` (test/documentation IP)
 - Failed Login Attempts: 6
 - First Failed Login: 10:00 UTC
 - Last Failed Login: 10:05 UTC
@@ -83,11 +83,11 @@ Developed a hands-on SOC investigation project using Microsoft Sentinel and KQL 
 - Incident Investigation
 - SOC Incident Reporting
 
-**Project Deliverables:**
+**Deliverables:**
 - KQL detection queries
-- Microsoft Sentinel investigation screenshots
+- Investigation screenshots
 - SOC incident investigation report
-- GitHub project documentation
+- GitHub documentation
 
 [View Microsoft Sentinel SOC Project](https://github.com/fhariyaz0802-dev/Microsoft-Sentinel-SOC-Detection)
 
@@ -168,7 +168,7 @@ Performed network traffic analysis to identify suspicious communication patterns
 - Threat Hunting
 - Packet Inspection
 
-[View Threat Hunting with Wireshark](https://github.com/fhariyaz0802-dev/Threat-Hunting-Wireshark)
+[View Threat Hunting Project](https://github.com/fhariyaz0802-dev/Threat-Hunting-Wireshark)
 
 ---
 
@@ -232,7 +232,7 @@ Co-developed a machine learning system designed to identify potentially fraudule
 - Authentication Log Analysis
 
 **Cybersecurity & SOC**
-- Security Operations Center (SOC) Fundamentals
+- SOC Fundamentals
 - Threat Detection
 - Brute-Force Pattern Detection
 - Incident Investigation
@@ -297,17 +297,18 @@ I am committed to continuously developing practical cybersecurity skills through
 ## Connect With Me
 
 **LinkedIn:**  
-[linkedin.com/in/fhariyazunnisa-abdul](https://www.linkedin.com/in/fhariyazunnisa-abdul)
+https://www.linkedin.com/in/fhariyazunnisa-abdul
 
 **GitHub:**  
-[github.com/fhariyaz0802-dev](https://github.com/fhariyaz0802-dev)
+https://github.com/fhariyaz0802-dev
 
 **Cybersecurity Portfolio Website:**  
-[View My Portfolio](https://fhariyaz0802-dev.github.io/portfolio-site/)
+https://fhariyaz0802-dev.github.io/portfolio-site/
 
 ---
 
 *Thank you for visiting my cybersecurity portfolio!*
+
 
 
 
