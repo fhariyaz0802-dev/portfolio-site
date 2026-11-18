@@ -2,534 +2,862 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Fhariyazunnisa Abdul - Cybersecurity Portfolio">
-<title>Fhariyazunnisa Abdul | Cybersecurity Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cybersecurity portfolio of Fhariyazunnisa Abdul, aspiring SOC Analyst.">
 
-<style>
-:root {
-  --navy: #10213b;
-  --blue: #2563eb;
-  --light: #f4f7fb;
-  --text: #263347;
-  --border: #dce5f0;
-}
+  <title>Fhariyazunnisa Abdul | Cybersecurity Portfolio</title>
 
-* {
-  box-sizing: border-box;
-}
+  <style>
+    :root {
+      --navy: #101e36;
+      --navy-light: #183c64;
+      --blue: #2563eb;
+      --blue-dark: #174ab9;
+      --background: #f4f7fc;
+      --text: #263347;
+      --muted: #617086;
+      --border: #dce5f0;
+    }
 
-html {
-  scroll-behavior: smooth;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: var(--light);
-  color: var(--text);
-  line-height: 1.7;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-header {
-  background: linear-gradient(125deg, #10213b, #174a7a);
-  color: white;
-  text-align: center;
-  padding: 75px 20px;
-}
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.7;
+    }
 
-header h1 {
-  font-size: clamp(30px, 5vw, 46px);
-  margin: 0;
-}
+    a {
+      color: var(--blue-dark);
+    }
 
-header h2 {
-  font-size: 21px;
-  font-weight: normal;
-  color: #d0e2ff;
-  margin: 12px 0;
-}
+    header {
+      background: linear-gradient(
+        125deg,
+        var(--navy),
+        var(--navy-light)
+      );
+      color: white;
+      text-align: center;
+      padding: 75px 20px;
+    }
 
-header p {
-  color: #e2eaf6;
-}
+    header h1 {
+      font-size: clamp(30px, 5vw, 46px);
+      margin: 0;
+    }
 
-nav {
-  background: #0c172b;
-  text-align: center;
-  padding: 15px;
-}
+    header h2 {
+      font-size: 21px;
+      font-weight: normal;
+      color: #d0e2ff;
+      margin: 12px 0;
+    }
 
-nav a {
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 5px 13px;
-}
+    header p {
+      color: #e2eaf6;
+      margin: 10px auto;
+      max-width: 750px;
+    }
 
-nav a:hover {
-  color: #93c5fd;
-}
+    .hero-buttons {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
 
-.container {
-  max-width: 1150px;
-  margin: auto;
-  padding: 35px 20px;
-}
+    .hero-buttons a {
+      display: inline-block;
+      padding: 11px 20px;
+      background: white;
+      color: var(--navy);
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-section {
-  margin-bottom: 55px;
-}
+    .hero-buttons a:hover {
+      background: #dbeafe;
+    }
 
-.section-title {
-  font-size: 27px;
-  color: #122747;
-  margin-bottom: 22px;
-  padding-bottom: 10px;
-  border-bottom: 3px solid var(--blue);
-}
+    nav {
+      background: #0c172b;
+      text-align: center;
+      padding: 15px;
+    }
 
-.about,
-.education-card,
-.contact-card {
-  background: white;
-  border-radius: 12px;
-  padding: 28px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-}
+    nav a {
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px 13px;
+    }
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 22px;
-}
+    nav a:hover {
+      color: #93c5fd;
+    }
 
-.project-card {
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.04);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
+    .container {
+      max-width: 1150px;
+      margin: auto;
+      padding: 35px 20px;
+    }
 
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.10);
-}
+    section {
+      margin-bottom: 55px;
+      scroll-margin-top: 25px;
+    }
 
-.project-card h3 {
-  color: #143d72;
-  margin-top: 0;
-  font-size: 20px;
-}
+    .section-title {
+      font-size: 27px;
+      color: #122747;
+      margin-bottom: 22px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid var(--blue);
+    }
 
-.project-card p {
-  font-size: 15px;
-}
+    .content-card {
+      background: white;
+      border-radius: 12px;
+      padding: 28px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
 
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 7px;
-  margin: 12px 0 20px;
-}
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(290px, 1fr)
+      );
+      gap: 22px;
+    }
 
-.tag {
-  background: #eaf1ff;
-  color: #174a90;
-  border-radius: 20px;
-  padding: 4px 10px;
-  font-size: 12px;
-  font-weight: bold;
-}
+    .project-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
 
-.btn {
-  display: inline-block;
-  background: var(--blue);
-  color: white;
-  padding: 11px 18px;
-  border-radius: 7px;
-  text-decoration: none;
-  font-weight: bold;
-  text-align: center;
-  margin-top: auto;
-}
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+    }
 
-.btn:hover {
-  background: #174ab9;
-}
+    .project-card h3 {
+      color: #143d72;
+      margin-top: 0;
+      font-size: 20px;
+    }
 
-.coming-soon {
-  margin-top: auto;
-  color: #64748b;
-  font-weight: bold;
-  font-size: 14px;
-}
+    .project-card p {
+      font-size: 15px;
+    }
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 18px;
-}
+    .project-card ul {
+      padding-left: 20px;
+      font-size: 14px;
+    }
 
-.skill-card {
-  background: white;
-  padding: 23px;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-}
+    .project-card li {
+      margin-bottom: 6px;
+    }
 
-.skill-card h3 {
-  color: #174a90;
-  margin-top: 0;
-}
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin: 12px 0 20px;
+    }
 
-.contact-card a {
-  color: #1557b0;
-  font-weight: bold;
-  overflow-wrap: anywhere;
-}
+    .tag {
+      background: #eaf1ff;
+      color: #174a90;
+      border-radius: 20px;
+      padding: 4px 10px;
+      font-size: 12px;
+      font-weight: bold;
+    }
 
-footer {
-  background: var(--navy);
-  color: #dbeafe;
-  text-align: center;
-  padding: 25px;
-}
+    .btn {
+      display: inline-block;
+      background: var(--blue);
+      color: white;
+      padding: 11px 18px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+      margin-top: auto;
+    }
 
-@media (max-width: 600px) {
-  .container {
-    padding: 25px 15px;
-  }
+    .btn:hover {
+      background: var(--blue-dark);
+    }
 
-  header {
-    padding: 50px 15px;
-  }
+    .coming-soon {
+      margin-top: auto;
+      color: var(--muted);
+      font-weight: bold;
+      font-size: 14px;
+    }
 
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-}
-</style>
+    .note {
+      background: #f1f6ff;
+      border-left: 3px solid var(--blue);
+      padding: 10px 12px;
+      font-size: 13px;
+      border-radius: 4px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(230px, 1fr)
+      );
+      gap: 18px;
+    }
+
+    .skill-card {
+      background: white;
+      padding: 23px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    .skill-card h3 {
+      color: #174a90;
+      margin-top: 0;
+    }
+
+    .skill-card p {
+      margin-bottom: 0;
+    }
+
+    .education-item {
+      margin-bottom: 20px;
+    }
+
+    .education-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .education-item h3 {
+      color: #143d72;
+      margin-bottom: 5px;
+    }
+
+    .education-item p {
+      margin: 5px 0;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .contact-links a {
+      display: inline-block;
+      background: #eaf1ff;
+      padding: 10px 16px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-links a:hover {
+      background: #dbeafe;
+    }
+
+    footer {
+      background: var(--navy);
+      color: #dbeafe;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 25px 15px;
+      }
+
+      header {
+        padding: 50px 15px;
+      }
+
+      nav a {
+        margin: 5px 8px;
+      }
+
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .content-card {
+        padding: 22px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Fhariyazunnisa Abdul</h1>
-  <h2>Aspiring SOC Analyst | Cybersecurity Portfolio</h2>
-  <p>
-    M.S. Management Information Systems |
-    Auburn University at Montgomery | May 2026
-  </p>
-</header>
+  <!-- HEADER -->
+  <header>
+    <h1>Fhariyazunnisa Abdul</h1>
 
-<nav aria-label="Main navigation">
-  <a href="#about">About</a>
-  <a href="#projects">Projects</a>
-  <a href="#skills">Skills</a>
-  <a href="#education">Education</a>
-  <a href="#contact">Contact</a>
-</nav>
+    <h2>
+      Aspiring SOC Analyst | Cybersecurity Portfolio
+    </h2>
 
-<main class="container">
-
-<section id="about">
-  <h2 class="section-title">About Me</h2>
-
-  <div class="about">
     <p>
-      I am an aspiring SOC Analyst with a Master's degree
-      in Management Information Systems from Auburn
-      University at Montgomery.
+      M.S. in Management Information Systems
     </p>
 
     <p>
-      My cybersecurity interests include security
-      operations, SIEM monitoring, threat detection,
-      authentication log analysis, network security,
-      and incident investigation.
+      Auburn University at Montgomery | May 2026
     </p>
 
-    <p>
-      Through hands-on projects using Splunk, Microsoft
-      Sentinel, KQL, Wireshark, and Windows security
-      monitoring tools, I am developing practical
-      skills for entry-level cybersecurity roles.
-    </p>
-  </div>
-</section>
+    <div class="hero-buttons">
+      <a href="#projects">View My Projects</a>
 
-<section id="projects">
-  <h2 class="section-title">Cybersecurity Projects</h2>
-
-  <div class="project-grid">
-
-    <article class="project-card">
-      <h3>1. Splunk SOC Brute-Force Detection</h3>
-      <p>
-        Investigated suspicious authentication activity,
-        developed SPL detection queries, and created
-        a SOC monitoring dashboard.
-      </p>
-
-      <div class="tags">
-        <span class="tag">Splunk</span>
-        <span class="tag">SPL</span>
-        <span class="tag">SIEM</span>
-      </div>
-
-      <a class="btn"
-         href="https://github.com/fhariyaz0802-dev/Splunk-SOC-Brute-Force-Detection"
-         target="_blank" rel="noopener noreferrer">
-        View Project
+      <a
+        href="https://github.com/fhariyaz0802-dev"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
       </a>
-    </article>
 
-    <article class="project-card">
-      <h3>2. Microsoft Sentinel SOC Detection</h3>
-      <p>
-        Used KQL and simulated Windows authentication
-        events to detect six failed logins followed
-        by a successful login. Documented findings
-        in a SOC incident investigation report.
-      </p>
-
-      <div class="tags">
-        <span class="tag">Microsoft Sentinel</span>
-        <span class="tag">KQL</span>
-        <span class="tag">Azure</span>
-      </div>
-
-      <a class="btn"
-         href="https://github.com/fhariyaz0802-dev/Microsoft-Sentinel-SOC-Detection"
-         target="_blank" rel="noopener noreferrer">
-        View Project
+      <a
+        href="https://www.linkedin.com/in/fhariyazunnisa-abdul"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
       </a>
-    </article>
-
-    <article class="project-card">
-      <h3>3. SOC Analyst Home Lab - Splunk</h3>
-      <p>
-        SOC home lab project exploring security event
-        monitoring, log investigation, and Splunk
-        analysis workflows.
-      </p>
-
-      <div class="tags">
-        <span class="tag">Splunk</span>
-        <span class="tag">SOC Lab</span>
-        <span class="tag">Log Analysis</span>
-      </div>
-
-      <a class="btn"
-         href="https://github.com/fhariyaz0802-dev/SOC-Analyst-Home-Lab-Splunk"
-         target="_blank" rel="noopener noreferrer">
-        View Project
-      </a>
-    </article>
-
-    <article class="project-card">
-      <h3>4. Active Directory &amp; Windows Logs Detection</h3>
-      <p>
-        Security monitoring lab focused on Windows
-        authentication events, Active Directory,
-        and security detection techniques.
-      </p>
-
-      <div class="tags">
-        <span class="tag">Active Directory</span>
-        <span class="tag">Windows Logs</span>
-        <span class="tag">Detection</span>
-      </div>
-
-      <a class="btn"
-         href="https://github.com/fhariyaz0802-dev/Active-Directory-Windows-Logs-Detection-Lab"
-         target="_blank" rel="noopener noreferrer">
-        View Project
-      </a>
-    </article>
-
-    <article class="project-card">
-      <h3>5. Threat Hunting with Wireshark</h3>
-      <p>
-        Network traffic investigation using Wireshark,
-        packet analysis, and DNS traffic examination
-        to identify suspicious communication patterns.
-      </p>
-
-      <div class="tags">
-        <span class="tag">Wireshark</span>
-        <span class="tag">DNS</span>
-        <span class="tag">Threat Hunting</span>
-      </div>
-
-      <a class="btn"
-         href="https://github.com/fhariyaz0802-dev/Threat-Hunting-Wireshark"
-         target="_blank" rel="noopener noreferrer">
-        View Project
-      </a>
-    </article>
-
-    <article class="project-card">
-      <h3>6. Phishing Email Analysis</h3>
-      <p>
-        Investigation of phishing indicators,
-        suspicious email headers, sender domains,
-        and potentially malicious URLs.
-      </p>
-
-      <div class="tags">
-        <span class="tag">Phishing</span>
-        <span class="tag">Email Security</span>
-        <span class="tag">Threat Analysis</span>
-      </div>
-
-      <a class="btn"
-         href="https://github.com/fhariyaz0802-dev/phishing-email-analysis-project"
-         target="_blank" rel="noopener noreferrer">
-        View Project
-      </a>
-    </article>
-
-    <article class="project-card">
-      <h3>7. Credit Card Fraud Detection</h3>
-      <p>
-        Machine learning project focused on
-        detecting fraudulent transactions using
-        Python and classification algorithms.
-      </p>
-
-      <div class="tags">
-        <span class="tag">Python</span>
-        <span class="tag">Machine Learning</span>
-        <span class="tag">Scikit-learn</span>
-      </div>
-
-      <p class="coming-soon">
-        Project repository link to be added
-      </p>
-    </article>
-
-  </div>
-</section>
-
-<section id="skills">
-  <h2 class="section-title">Technical Skills</h2>
-
-  <div class="skills-grid">
-
-    <div class="skill-card">
-      <h3>SIEM &amp; Monitoring</h3>
-      <p>Splunk, Microsoft Sentinel, SPL, KQL</p>
     </div>
+  </header>
 
-    <div class="skill-card">
-      <h3>Security Operations</h3>
-      <p>
-        SOC Monitoring, Threat Detection,
-        Incident Investigation, Log Analysis
-      </p>
-    </div>
+  <!-- NAVIGATION -->
+  <nav aria-label="Main navigation">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <div class="skill-card">
-      <h3>Network Security</h3>
-      <p>
-        Wireshark, DNS Analysis, Packet Analysis,
-        Network Security
-      </p>
-    </div>
+  <main class="container">
 
-    <div class="skill-card">
-      <h3>Windows Security</h3>
-      <p>
-        Windows Event Viewer, Sysmon,
-        Active Directory, Authentication Events
-      </p>
-    </div>
+    <!-- ABOUT -->
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
 
-    <div class="skill-card">
-      <h3>Cloud Security</h3>
-      <p>
-        Microsoft Azure, Azure Log Analytics,
-        Microsoft Sentinel
-      </p>
-    </div>
+      <div class="content-card">
+        <p>
+          Welcome to my cybersecurity portfolio!
+        </p>
 
-    <div class="skill-card">
-      <h3>Programming</h3>
-      <p>
-        Python, Pandas, NumPy,
-        Scikit-learn, GitHub
-      </p>
-    </div>
+        <p>
+          I am an aspiring SOC Analyst with a Master's
+          degree in Management Information Systems
+          from Auburn University at Montgomery.
+        </p>
 
-  </div>
-</section>
+        <p>
+          My cybersecurity interests include security
+          operations, SIEM monitoring, threat detection,
+          authentication log analysis, network security,
+          and incident investigation.
+        </p>
 
-<section id="education">
-  <h2 class="section-title">Education</h2>
+        <p>
+          Through hands-on projects using Splunk,
+          Microsoft Sentinel, KQL, Wireshark, and
+          Windows security monitoring technologies,
+          I am developing practical skills for
+          entry-level cybersecurity opportunities.
+        </p>
+      </div>
+    </section>
 
-  <div class="education-card">
-    <h3>Auburn University at Montgomery</h3>
-    <p>
-      Master of Science in Management Information Systems
-    </p>
-    <p>Graduated: May 2026</p>
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2 class="section-title">Cybersecurity Projects</h2>
 
-    <hr>
+      <div class="project-grid">
 
-    <h3>SRK Institute of Technology</h3>
-    <p>
-      Bachelor of Technology in Computer Science Engineering
-    </p>
-    <p>Graduated: April 2023</p>
-  </div>
-</section>
+        <!-- PROJECT 1 -->
+        <article class="project-card">
+          <h3>1. Splunk SOC Brute-Force Detection</h3>
 
-<section id="contact">
-  <h2 class="section-title">Connect With Me</h2>
+          <p>
+            Developed a SOC monitoring project to
+            investigate suspicious authentication
+            activity using Splunk.
+          </p>
 
-  <div class="contact-card">
-    <p>
-      <strong>LinkedIn:</strong>
-      <a href="https://www.linkedin.com/in/fhariyazunnisa-abdul"
-         target="_blank" rel="noopener noreferrer">
-        View LinkedIn Profile
-      </a>
-    </p>
+          <ul>
+            <li>Analyzed Windows Event ID 4625.</li>
+            <li>Investigated failed login attempts.</li>
+            <li>Developed SPL detection queries.</li>
+            <li>Created a monitoring dashboard.</li>
+            <li>Documented investigation findings.</li>
+          </ul>
 
-    <p>
-      <strong>GitHub:</strong>
-      <a href="https://github.com/fhariyaz0802-dev"
-         target="_blank" rel="noopener noreferrer">
-        View GitHub Profile
-      </a>
-    </p>
+          <div class="tags">
+            <span class="tag">Splunk</span>
+            <span class="tag">SPL</span>
+            <span class="tag">Windows Logs</span>
+            <span class="tag">SIEM</span>
+          </div>
 
-    <p>
-      <strong>Portfolio Repository:</strong>
-      <a href="https://github.com/fhariyaz0802-dev/portfolio-site"
-         target="_blank" rel="noopener noreferrer">
-        View Source Code
-      </a>
-    </p>
-  </div>
-</section>
+          <a
+            class="btn"
+            href="https://github.com/fhariyaz0802-dev/Splunk-SOC-Brute-Force-Detection"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project on GitHub
+          </a>
+        </article>
 
-</main>
+        <!-- PROJECT 2: LATEST SENTINEL PROJECT -->
+        <article class="project-card">
+          <h3>
+            2. Microsoft Sentinel SOC Monitoring
+            &amp; Brute-Force Detection
+          </h3>
 
-<footer>
-  <p>© 2026 Fhariyazunnisa Abdul</p>
-  <p>Cybersecurity Portfolio | Aspiring SOC Analyst</p>
-</footer>
+          <p>
+            Developed a SOC investigation project
+            using Microsoft Sentinel, Azure Log
+            Analytics, and KQL to detect simulated
+            suspicious authentication activity.
+          </p>
+
+          <ul>
+            <li>
+              Configured an Azure Log Analytics
+              workspace and Microsoft Sentinel.
+            </li>
+
+            <li>
+              Created simulated Windows security
+              events using KQL datatable.
+            </li>
+
+            <li>
+              Detected six failed login attempts
+              targeting the admin account.
+            </li>
+
+            <li>
+              Correlated Event ID 4625 failures
+              with Event ID 4624 success.
+            </li>
+
+            <li>
+              Documented investigation findings
+              in a SOC incident report.
+            </li>
+          </ul>
+
+          <p class="note">
+            Lab findings: Six simulated failed logins
+            from 192.0.2.10, followed by a successful
+            login. No actual compromise established.
+          </p>
+
+          <div class="tags">
+            <span class="tag">Microsoft Sentinel</span>
+            <span class="tag">KQL</span>
+            <span class="tag">Azure</span>
+            <span class="tag">SOC Investigation</span>
+          </div>
+
+          <a
+            class="btn"
+            href="https://github.com/fhariyaz0802-dev/Microsoft-Sentinel-SOC-Detection"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project on GitHub
+          </a>
+        </article>
+
+        <!-- PROJECT 3 -->
+        <article class="project-card">
+          <h3>3. SOC Analyst Home Lab - Splunk</h3>
+
+          <p>
+            A SOC Analyst home lab focused on
+            security event monitoring, log analysis,
+            and Splunk SIEM investigation workflows.
+          </p>
+
+          <ul>
+            <li>Security monitoring concepts</li>
+            <li>Splunk log analysis</li>
+            <li>SOC investigation workflows</li>
+            <li>Security detection fundamentals</li>
+          </ul>
+
+          <div class="tags">
+            <span class="tag">Splunk</span>
+            <span class="tag">SOC Lab</span>
+            <span class="tag">Log Analysis</span>
+          </div>
+
+          <a
+            class="btn"
+            href="https://github.com/fhariyaz0802-dev/SOC-Analyst-Home-Lab-Splunk"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project on GitHub
+          </a>
+        </article>
+
+        <!-- PROJECT 4 -->
+        <article class="project-card">
+          <h3>
+            4. Active Directory &amp;
+            Windows Logs Detection Lab
+          </h3>
+
+          <p>
+            A Windows security monitoring lab
+            focused on Active Directory,
+            authentication events, and security
+            log investigation.
+          </p>
+
+          <ul>
+            <li>Windows Security Event Logs</li>
+            <li>Active Directory concepts</li>
+            <li>Authentication monitoring</li>
+            <li>Security event investigation</li>
+          </ul>
+
+          <div class="tags">
+            <span class="tag">Active Directory</span>
+            <span class="tag">Windows Logs</span>
+            <span class="tag">Detection</span>
+          </div>
+
+          <a
+            class="btn"
+            href="https://github.com/fhariyaz0802-dev/Active-Directory-Windows-Logs-Detection-Lab"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project on GitHub
+          </a>
+        </article>
+
+        <!-- PROJECT 5 -->
+        <article class="project-card">
+          <h3>5. Threat Hunting with Wireshark</h3>
+
+          <p>
+            Network traffic analysis project focused
+            on investigating DNS activity and
+            suspicious communication patterns.
+          </p>
+
+          <ul>
+            <li>Analyzed network packets.</li>
+            <li>Investigated DNS traffic.</li>
+            <li>Examined unusual network behavior.</li>
+            <li>Documented potential indicators.</li>
+          </ul>
+
+          <div class="tags">
+            <span class="tag">Wireshark</span>
+            <span class="tag">DNS</span>
+            <span class="tag">Packet Analysis</span>
+          </div>
+
+          <a
+            class="btn"
+            href="https://github.com/fhariyaz0802-dev/Threat-Hunting-Wireshark"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project on GitHub
+          </a>
+        </article>
+
+        <!-- PROJECT 6 -->
+        <article class="project-card">
+          <h3>6. Phishing Email Analysis</h3>
+
+          <p>
+            Email security investigation project
+            focused on identifying phishing
+            indicators, suspicious links,
+            and sender authentication issues.
+          </p>
+
+          <ul>
+            <li>Analyzed email headers.</li>
+            <li>Investigated sender domains.</li>
+            <li>Examined suspicious URLs.</li>
+            <li>Reviewed SPF, DKIM, and DMARC.</li>
+          </ul>
+
+          <div class="tags">
+            <span class="tag">VirusTotal</span>
+            <span class="tag">Phishing</span>
+            <span class="tag">Email Security</span>
+          </div>
+
+          <a
+            class="btn"
+            href="https://github.com/fhariyaz0802-dev/phishing-email-analysis-project"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project on GitHub
+          </a>
+        </article>
+
+        <!-- PROJECT 7 -->
+        <article class="project-card">
+          <h3>7. Credit Card Fraud Detection</h3>
+
+          <p>
+            Co-developed a machine learning
+            project designed to identify potentially
+            fraudulent credit card transactions.
+          </p>
+
+          <ul>
+            <li>
+              Analyzed over 284,000 anonymized
+              transactions.
+            </li>
+            <li>Performed data preprocessing.</li>
+            <li>Trained classification models.</li>
+            <li>Developed a Tkinter interface.</li>
+          </ul>
+
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">Scikit-learn</span>
+            <span class="tag">Machine Learning</span>
+          </div>
+
+          <p class="coming-soon">
+            GitHub repository link to be added
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS -->
+    <section id="skills">
+      <h2 class="section-title">Technical Skills</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <h3>SIEM &amp; Monitoring</h3>
+          <p>
+            Splunk, Microsoft Sentinel,
+            SPL, KQL, Security Log Analysis
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Security Operations</h3>
+          <p>
+            SOC Monitoring, Threat Detection,
+            Incident Investigation,
+            Security Event Correlation
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Network Security</h3>
+          <p>
+            Wireshark, DNS Analysis,
+            Packet Inspection,
+            Network Traffic Analysis
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Windows Security</h3>
+          <p>
+            Windows Event Viewer, Sysmon,
+            Active Directory,
+            Windows Authentication Events
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Cloud Security</h3>
+          <p>
+            Microsoft Azure,
+            Azure Log Analytics,
+            Microsoft Sentinel
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Programming &amp; Data Analysis</h3>
+          <p>
+            Python, Pandas, NumPy,
+            Scikit-learn, SQL Fundamentals
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Documentation</h3>
+          <p>
+            GitHub, Markdown,
+            SOC Incident Reports,
+            Technical Documentation
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2 class="section-title">Education</h2>
+
+      <div class="content-card">
+
+        <div class="education-item">
+          <h3>Auburn University at Montgomery</h3>
+
+          <p>
+            <strong>
+              Master of Science in
+              Management Information Systems
+            </strong>
+          </p>
+
+          <p>Graduated: May 2026</p>
+        </div>
+
+        <hr>
+
+        <div class="education-item">
+          <h3>SRK Institute of Technology</h3>
+
+          <p>
+            <strong>
+              Bachelor of Technology in
+              Computer Science Engineering
+            </strong>
+          </p>
+
+          <p>Graduated: April 2023</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CAREER OBJECTIVE -->
+    <section id="objective">
+      <h2 class="section-title">Career Objective</h2>
+
+      <div class="content-card">
+        <p>
+          Seeking an entry-level SOC Analyst or
+          Cybersecurity Analyst opportunity where
+          I can apply hands-on project experience
+          with SIEM monitoring, KQL, SPL,
+          authentication log analysis,
+          threat detection, and incident investigation.
+        </p>
+
+        <p>
+          I am committed to continuously developing
+          practical cybersecurity skills through
+          hands-on labs, security projects,
+          and technical learning.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2 class="section-title">Connect With Me</h2>
+
+      <div class="content-card">
+        <p>
+          Explore my cybersecurity projects
+          and professional profile below.
+        </p>
+
+        <div class="contact-links">
+
+          <a
+            href="https://www.linkedin.com/in/fhariyazunnisa-abdul"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn Profile
+          </a>
+
+          <a
+            href="https://github.com/fhariyaz0802-dev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub Profile
+          </a>
+
+          <a
+            href="https://github.com/fhariyaz0802-dev/portfolio-site"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Portfolio Repository
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Fhariyazunnisa Abdul</p>
+    <p>Cybersecurity Portfolio | Aspiring SOC Analyst</p>
+  </footer>
 
 </body>
 </html>
+
 
 
