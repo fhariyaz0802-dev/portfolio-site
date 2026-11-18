@@ -41,6 +41,36 @@ Welcome to my cybersecurity portfolio. This repository showcases my hands-on pro
 - Investigated suspicious URLs and IP addresses.
 - Documented indicators of compromise.
 
+<div class="project-card">
+  <h3>Microsoft Sentinel SOC Monitoring &amp; Brute-Force Detection</h3>
+
+  <p>
+    Developed a hands-on SOC investigation using Microsoft
+    Sentinel, Azure Log Analytics, and KQL. Analyzed simulated
+    Windows authentication events to detect six failed login
+    attempts followed by a successful login from the same IP.
+  </p>
+
+  <p>
+    <strong>Skills:</strong>
+    Microsoft Sentinel, Azure Log Analytics, KQL,
+    SIEM Monitoring, Brute-Force Detection,
+    Authentication Event Correlation, Incident Reporting
+  </p>
+
+  <p>
+    <strong>Deliverables:</strong>
+    KQL detection queries, investigation screenshots,
+    and a simulated SOC incident investigation report.
+  </p>
+
+  <a href="https://github.com/fhariyaz0802-dev/Microsoft-Sentinel-SOC-Detection"
+     target="_blank" rel="noopener noreferrer">
+    View Project on GitHub
+  </a>
+</div>
+
+
 ### 5. Credit Card Fraud Detection
 **Tools:** Python, Pandas, NumPy, Scikit-learn, Tkinter
 
