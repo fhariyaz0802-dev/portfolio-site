@@ -1,41 +1,1113 @@
 
-<!-- CTF CHALLENGES & ACHIEVEMENTS -->
-<section class="section" id="ctf">
-  <h2>CTF Challenges &amp; Achievements</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Fhariyazunnisa Abdul - Cybersecurity Portfolio and SOC Analyst Projects">
 
-  <article class="project-card">
-    <h3>
-      SentinelOne × WiCyS ThreatOps CTF Series 2026
-    </h3>
+<title>Fhariyazunnisa Abdul | Cybersecurity Portfolio</title>
 
-    <p><strong>Final Score:</strong> 850 Points</p>
+<style>
+:root {
+  --blue: #0866c5;
+  --darkblue: #084c92;
+  --text: #26343d;
+  --background: #f4f8fb;
+  --border: #d7e4f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  margin: 0;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 25px;
+}
+
+/* NAVIGATION */
+
+.navbar {
+  background: white;
+  border-radius: 20px;
+  margin: 35px auto;
+  padding: 25px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-shadow: 0 5px 22px rgba(0,0,0,0.04);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+.nav-links a {
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.nav-links a:hover {
+  color: var(--darkblue);
+  text-decoration: underline;
+}
+
+/* HERO SECTION */
+
+.hero {
+  background: white;
+  border-radius: 22px;
+  padding: 70px 55px;
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  margin-bottom: 35px;
+  box-shadow: 0 5px 22px rgba(0,0,0,0.04);
+}
+
+.profile-photo {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 6px solid var(--blue);
+  flex-shrink: 0;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero h1 {
+  color: var(--blue);
+  font-size: clamp(34px, 4vw, 52px);
+  margin: 0 0 20px;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  color: var(--darkblue);
+  font-size: 25px;
+  margin-bottom: 22px;
+}
+
+.hero-description {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--blue);
+  color: white;
+  padding: 12px 22px;
+  border-radius: 9px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: var(--darkblue);
+}
+
+.btn-outline {
+  background: white;
+  color: var(--blue);
+  border: 2px solid var(--blue);
+}
+
+.btn-outline:hover {
+  background: #eaf3ff;
+  color: var(--darkblue);
+}
+
+/* SECTIONS */
+
+.section {
+  background: white;
+  padding: 40px;
+  margin-bottom: 35px;
+  border-radius: 20px;
+  box-shadow: 0 5px 22px rgba(0,0,0,0.04);
+  scroll-margin-top: 20px;
+}
+
+.section h2 {
+  color: var(--blue);
+  font-size: 29px;
+  margin-top: 0;
+  border-bottom: 2px solid #e1ebf5;
+  padding-bottom: 12px;
+}
+
+.section p {
+  font-size: 16px;
+}
+
+/* SKILLS */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background: #f7faff;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.skill-card h3 {
+  color: var(--blue);
+  margin-top: 0;
+}
+
+.skill-card p {
+  margin-bottom: 0;
+}
+
+/* PROJECTS */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 22px;
+}
+
+.project-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transform: translateY(-3px);
+}
+
+.project-card h3 {
+  color: var(--blue);
+  margin-top: 0;
+  font-size: 21px;
+}
+
+.project-card p {
+  font-size: 15px;
+}
+
+.project-card ul {
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.project-card li {
+  margin-bottom: 7px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.tag {
+  background: #eaf2fc;
+  color: #164c86;
+  padding: 5px 11px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.project-link {
+  display: inline-block;
+  color: var(--blue);
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: auto;
+  padding-top: 15px;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.project-note {
+  background: #f1f7ff;
+  border-left: 3px solid var(--blue);
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.pending-link {
+  margin-top: auto;
+  color: #69798c;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* CTF ACHIEVEMENTS */
+
+.ctf-card {
+  background: #f7faff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px;
+}
+
+.ctf-card h3 {
+  color: var(--blue);
+  margin-top: 0;
+}
+
+.ctf-score {
+  font-size: 22px;
+  color: var(--darkblue);
+  font-weight: bold;
+}
+
+.ctf-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin: 25px 0;
+}
+
+.ctf-gallery figure {
+  margin: 0;
+  padding: 16px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.ctf-gallery img {
+  display: block;
+  width: 100%;
+  height: 320px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.ctf-gallery figcaption {
+  color: var(--darkblue);
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+/* EDUCATION */
+
+.education-item {
+  margin-bottom: 25px;
+}
+
+.education-item h3 {
+  color: var(--darkblue);
+  margin-bottom: 6px;
+}
+
+.education-item p {
+  margin: 5px 0;
+}
+
+/* CONTACT */
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #617086;
+  font-size: 14px;
+}
+
+/* MOBILE */
+
+@media (max-width: 850px) {
+  .navbar {
+    padding: 22px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 25px;
+    gap: 25px;
+  }
+
+  .profile-photo {
+    width: 210px;
+    height: 210px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .section {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ctf-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .ctf-gallery img {
+    height: auto;
+    max-height: 350px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0 14px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 33px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <a href="#home" class="logo">
+      Fhariyazunnisa Abdul
+    </a>
+
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#ctf">CTF Achievements</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <img
+      src="profile.jpeg"
+      alt="Fhariyazunnisa Abdul profile photo"
+      class="profile-photo"
+    >
+
+    <div class="hero-content">
+
+      <h1>Fhariyazunnisa Abdul</h1>
+
+      <p class="hero-subtitle">
+        Management Information Systems Graduate |
+        Aspiring SOC Analyst
+      </p>
+
+      <p class="hero-description">
+        Cybersecurity | Splunk SIEM |
+        Microsoft Sentinel | Security Monitoring |
+        Threat Detection
+      </p>
+
+      <p class="hero-description">
+        M.S. in Management Information Systems from
+        Auburn University at Montgomery, May 2026.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#projects" class="btn">
+          View My Projects
+        </a>
+
+        <a
+          href="https://github.com/fhariyaz0802-dev"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-outline"
+        >
+          GitHub Profile
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/fhariyazunnisa-abdul"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-outline"
+        >
+          LinkedIn
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <h2>About Me</h2>
 
     <p>
-      Participated in my first cybersecurity
-      Capture the Flag challenge, gaining
-      hands-on exposure to security investigations,
-      alert analysis, and threat detection.
+      Welcome to my cybersecurity portfolio!
     </p>
 
-    <div class="ctf-gallery">
-      <figure>
-        <img
-          src="image.png"
-          alt="SentinelOne WiCyS CTF Badge"
-        >
-        <figcaption>Official CTF Badge</figcaption>
-      </figure>
+    <p>
+      I am an aspiring SOC Analyst with a Master's
+      degree in Management Information Systems
+      from Auburn University at Montgomery.
+    </p>
 
-      <figure>
-        <img
-          src="WhatsApp Image 2026-11-21 at 09.25.43.jpeg"
-          alt="CTF Participation Screenshot"
-        >
-        <figcaption>CTF Participation</figcaption>
-      </figure>
+    <p>
+      I am passionate about cybersecurity,
+      security operations, threat detection,
+      incident investigation, and log analysis.
+    </p>
+
+    <p>
+      Through hands-on cybersecurity projects,
+      I am developing practical experience
+      with Splunk, Microsoft Sentinel,
+      KQL, SPL, Wireshark, Active Directory,
+      Windows security monitoring, and
+      incident documentation.
+    </p>
+
+    <p>
+      My goal is to begin my career in an
+      entry-level SOC Analyst or Cybersecurity
+      Analyst role.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <h2>Technical Skills</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <h3>SIEM &amp; Monitoring</h3>
+        <p>
+          Splunk, Microsoft Sentinel, SPL, KQL,
+          Security Event Monitoring,
+          Authentication Log Analysis
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Security Operations</h3>
+        <p>
+          SOC Fundamentals, Threat Detection,
+          Brute-Force Pattern Detection,
+          Incident Investigation,
+          Event Correlation, SOC Reporting
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Network Security</h3>
+        <p>
+          Wireshark, DNS Analysis,
+          Packet Inspection,
+          Network Traffic Analysis,
+          Threat Hunting Fundamentals
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Endpoint Security</h3>
+        <p>
+          Windows Event Viewer, Sysmon,
+          Active Directory,
+          Windows Authentication Events,
+          Windows 11
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Cloud Security</h3>
+        <p>
+          Microsoft Azure,
+          Azure Log Analytics,
+          Microsoft Sentinel
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Programming &amp; Data</h3>
+        <p>
+          Python, Pandas, NumPy,
+          Scikit-learn, SQL Fundamentals
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Documentation</h3>
+        <p>
+          GitHub, Markdown,
+          Incident Reporting,
+          Technical Documentation
+        </p>
+      </div>
+
     </div>
-  </article>
-</section>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <h2>Cybersecurity Projects</h2>
+
+    <p>
+      Explore my hands-on cybersecurity projects,
+      investigation methodologies, detection queries,
+      and technical documentation.
+    </p>
+
+    <div class="project-grid">
+
+      <!-- PROJECT 1 -->
+      <article class="project-card">
+        <h3>1. Splunk SOC Brute-Force Detection</h3>
+
+        <p>
+          Developed a SOC monitoring project
+          focused on identifying suspicious
+          authentication activity using Splunk.
+        </p>
+
+        <ul>
+          <li>Analyzed Windows Event ID 4625.</li>
+          <li>Investigated repeated failed logins.</li>
+          <li>Developed SPL detection queries.</li>
+          <li>Created a Splunk monitoring dashboard.</li>
+          <li>Documented investigation findings.</li>
+        </ul>
+
+        <div class="project-tags">
+          <span class="tag">Splunk</span>
+          <span class="tag">SPL</span>
+          <span class="tag">Windows Logs</span>
+          <span class="tag">SIEM</span>
+        </div>
+
+        <a
+          class="project-link"
+          href="https://github.com/fhariyaz0802-dev/Splunk-SOC-Brute-Force-Detection"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Project on GitHub
+        </a>
+      </article>
+
+      <!-- PROJECT 2 -->
+      <article class="project-card">
+        <h3>
+          2. Microsoft Sentinel SOC Monitoring
+          &amp; Brute-Force Detection
+        </h3>
+
+        <p>
+          Built a Microsoft Sentinel investigation
+          lab using simulated Windows authentication
+          events and Kusto Query Language.
+        </p>
+
+        <ul>
+          <li>
+            Configured Azure Log Analytics
+            and Microsoft Sentinel.
+          </li>
+          <li>
+            Created simulated events using
+            KQL datatable.
+          </li>
+          <li>
+            Detected six failed login attempts
+            targeting the admin account.
+          </li>
+          <li>
+            Correlated failed and successful
+            authentication events.
+          </li>
+          <li>
+            Created a SOC incident report.
+          </li>
+        </ul>
+
+        <p class="project-note">
+          Simulated investigation: six failed
+          logins from test IP 192.0.2.10
+          followed by a successful login.
+          No actual compromise established.
+        </p>
+
+        <div class="project-tags">
+          <span class="tag">Microsoft Sentinel</span>
+          <span class="tag">KQL</span>
+          <span class="tag">Azure</span>
+          <span class="tag">SOC Investigation</span>
+        </div>
+
+        <a
+          class="project-link"
+          href="https://github.com/fhariyaz0802-dev/Microsoft-Sentinel-SOC-Detection"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Project on GitHub
+        </a>
+      </article>
+
+      <!-- PROJECT 3 -->
+      <article class="project-card">
+        <h3>3. SOC Analyst Home Lab - Splunk</h3>
+
+        <p>
+          A cybersecurity home lab focused
+          on security monitoring, SIEM analysis,
+          and SOC investigation workflows.
+        </p>
+
+        <ul>
+          <li>Security monitoring concepts</li>
+          <li>Splunk log analysis</li>
+          <li>SIEM investigation workflows</li>
+          <li>Security detection fundamentals</li>
+        </ul>
+
+        <div class="project-tags">
+          <span class="tag">Splunk</span>
+          <span class="tag">SOC Lab</span>
+          <span class="tag">Log Analysis</span>
+        </div>
+
+        <a
+          class="project-link"
+          href="https://github.com/fhariyaz0802-dev/SOC-Analyst-Home-Lab-Splunk"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Project on GitHub
+        </a>
+      </article>
+
+      <!-- PROJECT 4 -->
+      <article class="project-card">
+        <h3>
+          4. Active Directory &amp;
+          Windows Logs Detection Lab
+        </h3>
+
+        <p>
+          Windows security monitoring project
+          focused on authentication events,
+          Active Directory concepts,
+          and suspicious login detection.
+        </p>
+
+        <ul>
+          <li>Windows Security Event Logs</li>
+          <li>Active Directory security concepts</li>
+          <li>Authentication monitoring</li>
+          <li>Security event investigation</li>
+        </ul>
+
+        <div class="project-tags">
+          <span class="tag">Active Directory</span>
+          <span class="tag">Windows Logs</span>
+          <span class="tag">Detection</span>
+        </div>
+
+        <a
+          class="project-link"
+          href="https://github.com/fhariyaz0802-dev/Active-Directory-Windows-Logs-Detection-Lab"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Project on GitHub
+        </a>
+      </article>
+
+      <!-- PROJECT 5 -->
+      <article class="project-card">
+        <h3>5. Threat Hunting with Wireshark</h3>
+
+        <p>
+          Analyzed network traffic using Wireshark
+          to investigate DNS activity and identify
+          unusual network communication patterns.
+        </p>
+
+        <ul>
+          <li>Captured and analyzed packets.</li>
+          <li>Investigated DNS query patterns.</li>
+          <li>Examined unusual network activity.</li>
+          <li>Documented potential indicators.</li>
+        </ul>
+
+        <div class="project-tags">
+          <span class="tag">Wireshark</span>
+          <span class="tag">DNS</span>
+          <span class="tag">Packet Analysis</span>
+        </div>
+
+        <a
+          class="project-link"
+          href="https://github.com/fhariyaz0802-dev/Threat-Hunting-Wireshark"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Project on GitHub
+        </a>
+      </article>
+
+      <!-- PROJECT 6 -->
+      <article class="project-card">
+        <h3>6. Phishing Email Analysis</h3>
+
+        <p>
+          Investigated suspicious emails using
+          email header analysis, VirusTotal,
+          and email authentication concepts.
+        </p>
+
+        <ul>
+          <li>Analyzed suspicious email headers.</li>
+          <li>Investigated sender domains.</li>
+          <li>Examined suspicious URLs.</li>
+          <li>Reviewed SPF, DKIM, and DMARC.</li>
+        </ul>
+
+        <div class="project-tags">
+          <span class="tag">VirusTotal</span>
+          <span class="tag">Email Security</span>
+          <span class="tag">SPF/DKIM/DMARC</span>
+        </div>
+
+        <a
+          class="project-link"
+          href="https://github.com/fhariyaz0802-dev/phishing-email-analysis-project"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Project on GitHub
+        </a>
+      </article>
+
+      <!-- PROJECT 7 -->
+      <article class="project-card">
+        <h3>7. Credit Card Fraud Detection</h3>
+
+        <p>
+          Co-developed a machine learning
+          system designed to identify
+          potentially fraudulent transactions.
+        </p>
+
+        <ul>
+          <li>
+            Analyzed over 284,000 anonymized
+            transactions.
+          </li>
+          <li>Performed data preprocessing.</li>
+          <li>Trained classification models.</li>
+          <li>Developed a Tkinter interface.</li>
+        </ul>
+
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">Scikit-learn</span>
+          <span class="tag">Machine Learning</span>
+        </div>
+
+        <p class="pending-link">
+          GitHub project link to be added
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CTF CHALLENGES & ACHIEVEMENTS -->
+  <section class="section" id="ctf">
+    <h2>CTF Challenges &amp; Achievements</h2>
+
+    <div class="ctf-card">
+
+      <h3>
+        SentinelOne × WiCyS ThreatOps CTF Series 2026
+      </h3>
+
+      <p class="ctf-score">
+        Final Score: 850 Points
+      </p>
+
+      <p>
+        Participated in my first cybersecurity
+        Capture the Flag (CTF) challenge
+        organized by SentinelOne and
+        Women in CyberSecurity (WiCyS).
+      </p>
+
+      <p>
+        This experience helped me connect
+        theoretical cybersecurity knowledge
+        with hands-on security investigation
+        and threat analysis exercises.
+      </p>
+
+      <div class="ctf-gallery">
+
+        <figure>
+          <img
+            src="image.png"
+            alt="SentinelOne WiCyS ThreatOps CTF Badge"
+            loading="lazy"
+          >
+          <figcaption>
+            SentinelOne × WiCyS CTF Badge
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="WhatsApp Image 2026-11-21 at 09.25.43.jpeg"
+            alt="SentinelOne WiCyS CTF Results Screenshot"
+            loading="lazy"
+          >
+          <figcaption>
+            CTF Participation &amp; Results
+          </figcaption>
+        </figure>
+
+      </div>
+
+      <h3>Key Learning Outcomes</h3>
+
+      <ul>
+        <li>
+          Explored the SentinelOne security platform.
+        </li>
+        <li>
+          Practiced reviewing security alerts
+          and suspicious activities.
+        </li>
+        <li>
+          Developed analytical and problem-solving skills.
+        </li>
+        <li>
+          Gained introductory exposure to
+          threat investigation and SOC workflows.
+        </li>
+        <li>
+          Strengthened my interest in pursuing
+          a career as a SOC Analyst.
+        </li>
+      </ul>
+
+      <div class="project-tags">
+        <span class="tag">SentinelOne</span>
+        <span class="tag">WiCyS</span>
+        <span class="tag">CTF</span>
+        <span class="tag">ThreatOps</span>
+        <span class="tag">Security Analysis</span>
+        <span class="tag">SOC Fundamentals</span>
+      </div>
+
+      <p class="project-note">
+        CTF participation and hands-on learning
+        experience. This is not a professional
+        certification.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <h2>Education</h2>
+
+    <div class="education-item">
+      <h3>Auburn University at Montgomery</h3>
+
+      <p>
+        <strong>
+          Master of Science in
+          Management Information Systems
+        </strong>
+      </p>
+
+      <p>Graduated: May 2026</p>
+    </div>
+
+    <hr>
+
+    <div class="education-item">
+      <h3>SRK Institute of Technology</h3>
+
+      <p>
+        <strong>
+          Bachelor of Technology in
+          Computer Science Engineering
+        </strong>
+      </p>
+
+      <p>Graduated: April 2023</p>
+    </div>
+  </section>
+
+  <!-- CAREER OBJECTIVE -->
+  <section class="section" id="objective">
+    <h2>Career Objective</h2>
+
+    <p>
+      Seeking an entry-level SOC Analyst
+      or Cybersecurity Analyst opportunity
+      where I can apply my hands-on project
+      experience in SIEM monitoring,
+      authentication log analysis,
+      threat detection, KQL, SPL,
+      and incident investigation.
+    </p>
+
+    <p>
+      I am committed to continuously
+      developing practical cybersecurity
+      skills through security projects,
+      hands-on labs, and technical learning.
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <h2>Connect With Me</h2>
+
+    <p>
+      Explore my cybersecurity projects
+      and professional profile.
+    </p>
+
+    <div class="contact-links">
+
+      <a
+        href="https://www.linkedin.com/in/fhariyazunnisa-abdul"
+        class="btn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
+
+      <a
+        href="https://github.com/fhariyaz0802-dev"
+        class="btn btn-outline"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
+
+      <a
+        href="https://github.com/fhariyaz0802-dev/portfolio-site"
+        class="btn btn-outline"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Portfolio Repository
+      </a>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Fhariyazunnisa Abdul</p>
+    <p>Cybersecurity Portfolio | Aspiring SOC Analyst</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
+
 
 
 
