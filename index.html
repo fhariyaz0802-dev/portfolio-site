@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Fhariyazunnisa Abdul - Cybersecurity Portfolio, Internship and SOC Analyst Projects">
+<meta name="description" content="Fhariyazunnisa Abdul - Cybersecurity Portfolio, WiCyS Member, Internship and SOC Analyst Projects">
 <title>Fhariyazunnisa Abdul | Cybersecurity Portfolio</title>
 
 <style>
@@ -112,6 +112,23 @@ body {
 .hero-description {
   font-size: 18px;
   margin-bottom: 16px;
+}
+
+.membership-label {
+  display: inline-block;
+  background: #eaf2fc;
+  color: var(--darkblue);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 9px 16px;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+.membership-label:hover {
+  background: #dcecff;
 }
 
 .hero-buttons {
@@ -342,6 +359,45 @@ body {
   margin-top: 12px;
 }
 
+/* PROFESSIONAL MEMBERSHIPS */
+.membership-card {
+  background: #f7faff;
+  border: 1px solid var(--border);
+  border-left: 5px solid var(--blue);
+  border-radius: 14px;
+  padding: 30px;
+}
+
+.membership-card h3 {
+  color: var(--blue);
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.membership-role {
+  color: var(--darkblue);
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.membership-card h4 {
+  color: var(--darkblue);
+  margin-bottom: 10px;
+}
+
+.membership-card ul {
+  padding-left: 22px;
+}
+
+.membership-card li {
+  margin-bottom: 8px;
+}
+
+.membership-card .btn {
+  margin-top: 10px;
+}
+
 /* EDUCATION */
 .education-item { margin-bottom: 25px; }
 
@@ -395,6 +451,10 @@ footer {
     height: auto;
     max-height: 350px;
   }
+
+  .membership-card {
+    padding: 20px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -421,6 +481,7 @@ footer {
     <a href="#internship">Internship</a>
     <a href="#projects">Projects</a>
     <a href="#ctf">CTF Achievements</a>
+    <a href="#memberships">Memberships</a>
     <a href="#education">Education</a>
     <a href="#contact">Contact</a>
   </div>
@@ -452,6 +513,10 @@ footer {
       M.S. in Management Information Systems from
       Auburn University at Montgomery, May 2026.
     </p>
+
+    <a href="#memberships" class="membership-label">
+      Women in CyberSecurity (WiCyS) Member
+    </a>
 
     <div class="hero-buttons">
       <a href="#projects" class="btn">View My Projects</a>
@@ -506,6 +571,15 @@ footer {
     Cybersecurity Academy (AICTE–EduSkills),
     focused on cybersecurity fundamentals,
     network security, and security operations.
+  </p>
+
+  <p>
+    I am a member of
+    <strong>Women in CyberSecurity (WiCyS)</strong>,
+    a global cybersecurity community dedicated
+    to supporting women in cybersecurity through
+    professional development, mentorship,
+    networking, and career advancement.
   </p>
 
   <p>
@@ -1007,6 +1081,88 @@ footer {
   </div>
 </section>
 
+<!-- PROFESSIONAL MEMBERSHIPS -->
+<section class="section" id="memberships">
+  <h2>Professional Memberships &amp; Affiliations</h2>
+
+  <div class="membership-card">
+
+    <h3>Women in CyberSecurity (WiCyS)</h3>
+
+    <p class="membership-role">
+      Professional Organization Member
+    </p>
+
+    <p>
+      Member of Women in CyberSecurity (WiCyS),
+      a global nonprofit organization dedicated
+      to the recruitment, retention, and
+      advancement of women in cybersecurity.
+    </p>
+
+    <p>
+      My membership reflects my commitment
+      to continuous learning, professional
+      development, cybersecurity community
+      engagement, and building a career
+      in security operations.
+    </p>
+
+    <h4>Professional Development Interests</h4>
+
+    <ul>
+      <li>
+        Cybersecurity networking and
+        community engagement.
+      </li>
+      <li>
+        Security Operations Center (SOC)
+        career development.
+      </li>
+      <li>
+        Technical workshops, webinars,
+        and cybersecurity learning opportunities.
+      </li>
+      <li>
+        Mentorship and professional growth
+        within the cybersecurity industry.
+      </li>
+      <li>
+        Hands-on cybersecurity challenges,
+        threat detection, and security research.
+      </li>
+    </ul>
+
+    <p>
+      <strong>Related Achievement:</strong>
+      Participated in the SentinelOne × WiCyS
+      ThreatOps CTF Series 2026,
+      achieving a final score of 850 points.
+    </p>
+
+    <div class="project-tags">
+      <span class="tag">WiCyS</span>
+      <span class="tag">Professional Membership</span>
+      <span class="tag">Cybersecurity Community</span>
+      <span class="tag">Professional Development</span>
+      <span class="tag">Continuous Learning</span>
+    </div>
+
+    <a
+      href="https://www.wicys.org/"
+      class="btn"
+      target="_blank"
+      rel="noopener noreferrer"
+    >Visit WiCyS Official Website</a>
+
+    <a
+      href="#ctf"
+      class="btn btn-outline"
+    >View CTF Achievement</a>
+
+  </div>
+</section>
+
 <!-- EDUCATION -->
 <section class="section" id="education">
   <h2>Education</h2>
@@ -1060,6 +1216,14 @@ footer {
     skills through security projects,
     hands-on labs, and technical learning.
   </p>
+
+  <p>
+    As a member of Women in CyberSecurity
+    (WiCyS), I am interested in professional
+    development, mentorship, networking,
+    and contributing to the cybersecurity
+    community throughout my career.
+  </p>
 </section>
 
 <!-- CONTACT -->
@@ -1098,12 +1262,17 @@ footer {
 <!-- FOOTER -->
 <footer>
   <p>© 2026 Fhariyazunnisa Abdul</p>
-  <p>Cybersecurity Portfolio | Aspiring SOC Analyst</p>
+  <p>
+    Cybersecurity Portfolio |
+    Aspiring SOC Analyst |
+    WiCyS Member
+  </p>
 </footer>
 
 </div>
 </body>
 </html>
+
 
 
 
