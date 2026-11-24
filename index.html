@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Fhariyazunnisa Abdul - Cybersecurity Portfolio, WiCyS Member, Internship and SOC Analyst Projects">
+<meta name="description" content="Fhariyazunnisa Abdul - Cybersecurity Portfolio, Security Operations, Threat Detection, SIEM Projects and WiCyS Membership">
 <title>Fhariyazunnisa Abdul | Cybersecurity Portfolio</title>
 
 <style>
@@ -57,14 +57,14 @@ body {
 .nav-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 26px;
+  gap: 20px;
 }
 
 .nav-links a {
   color: var(--blue);
   text-decoration: none;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .nav-links a:hover {
@@ -106,6 +106,7 @@ body {
 .hero-subtitle {
   color: var(--darkblue);
   font-size: 25px;
+  font-weight: bold;
   margin-bottom: 22px;
 }
 
@@ -182,6 +183,29 @@ body {
 }
 
 .section p { font-size: 16px; }
+
+/* ABOUT ME */
+.about-content {
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+.about-content strong {
+  color: var(--darkblue);
+}
+
+/* CAREER OBJECTIVE */
+.objective-card {
+  background: #f7faff;
+  border: 1px solid var(--border);
+  border-left: 5px solid var(--blue);
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.objective-card strong {
+  color: var(--darkblue);
+}
 
 /* SKILLS */
 .skills-grid {
@@ -394,8 +418,11 @@ body {
   margin-bottom: 8px;
 }
 
-.membership-card .btn {
-  margin-top: 10px;
+.membership-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
 }
 
 /* EDUCATION */
@@ -452,7 +479,8 @@ footer {
     max-height: 350px;
   }
 
-  .membership-card {
+  .membership-card,
+  .objective-card {
     padding: 20px;
   }
 }
@@ -477,6 +505,7 @@ footer {
 
   <div class="nav-links">
     <a href="#about">About</a>
+    <a href="#objective">Career Objective</a>
     <a href="#skills">Skills</a>
     <a href="#internship">Internship</a>
     <a href="#projects">Projects</a>
@@ -489,6 +518,7 @@ footer {
 
 <!-- HERO -->
 <section class="hero" id="home">
+
   <img
     src="profile.jpeg"
     alt="Fhariyazunnisa Abdul profile photo"
@@ -496,22 +526,26 @@ footer {
   >
 
   <div class="hero-content">
+
     <h1>Fhariyazunnisa Abdul</h1>
 
     <p class="hero-subtitle">
-      Management Information Systems Graduate |
-      Aspiring SOC Analyst
-    </p>
-
-    <p class="hero-description">
-      Cybersecurity | Splunk SIEM |
-      Microsoft Sentinel | Security Monitoring |
+      Cybersecurity | Security Operations |
       Threat Detection
     </p>
 
     <p class="hero-description">
-      M.S. in Management Information Systems from
-      Auburn University at Montgomery, May 2026.
+      M.S. in Management Information Systems
+    </p>
+
+    <p class="hero-description">
+      Splunk SIEM | Microsoft Sentinel |
+      Log Analysis | Incident Investigation
+    </p>
+
+    <p class="hero-description">
+      Auburn University at Montgomery |
+      May 2026 Graduate
     </p>
 
     <a href="#memberships" class="membership-label">
@@ -519,7 +553,10 @@ footer {
     </a>
 
     <div class="hero-buttons">
-      <a href="#projects" class="btn">View My Projects</a>
+
+      <a href="#projects" class="btn">
+        View My Projects
+      </a>
 
       <a
         href="https://github.com/fhariyaz0802-dev"
@@ -534,63 +571,101 @@ footer {
         rel="noopener noreferrer"
         class="btn btn-outline"
       >LinkedIn</a>
+
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
+<!-- ABOUT ME -->
 <section class="section" id="about">
+
   <h2>About Me</h2>
 
-  <p>Welcome to my cybersecurity portfolio!</p>
+  <div class="about-content">
 
-  <p>
-    I am an aspiring SOC Analyst with a Master's
-    degree in Management Information Systems
-    from Auburn University at Montgomery.
-  </p>
+    <p>
+      I am a Management Information Systems graduate
+      from <strong>Auburn University at Montgomery</strong>
+      with a strong foundation in cybersecurity,
+      security operations, threat detection,
+      and incident investigation.
+    </p>
 
-  <p>
-    I am passionate about cybersecurity,
-    security operations, threat detection,
-    incident investigation, and log analysis.
-  </p>
+    <p>
+      My hands-on cybersecurity portfolio demonstrates
+      practical skills in SIEM monitoring,
+      authentication log analysis, threat hunting,
+      phishing investigation, and security incident
+      documentation using <strong>Splunk,
+      Microsoft Sentinel, Wireshark, SPL, and KQL.</strong>
+    </p>
 
-  <p>
-    Through hands-on cybersecurity projects,
-    I am developing practical experience with
-    Splunk, Microsoft Sentinel, KQL, SPL,
-    Wireshark, Active Directory,
-    Windows security monitoring, and
-    incident documentation.
-  </p>
+    <p>
+      I completed a virtual cybersecurity internship
+      through <strong>Palo Alto Networks Cybersecurity
+      Academy (AICTE–EduSkills)</strong>, developing
+      foundational knowledge of network security,
+      firewalls, VPNs, and security operations.
+    </p>
 
-  <p>
-    I also completed a virtual cybersecurity
-    internship through Palo Alto Networks
-    Cybersecurity Academy (AICTE–EduSkills),
-    focused on cybersecurity fundamentals,
-    network security, and security operations.
-  </p>
+    <p>
+      As a member of
+      <strong>Women in CyberSecurity (WiCyS)</strong>,
+      I am committed to continuous professional
+      development and cybersecurity community
+      engagement. I also participated in the
+      <strong>SentinelOne × WiCyS ThreatOps CTF
+      Series 2026</strong>, achieving a final
+      score of <strong>850 points.</strong>
+    </p>
 
-  <p>
-    I am a member of
-    <strong>Women in CyberSecurity (WiCyS)</strong>,
-    a global cybersecurity community dedicated
-    to supporting women in cybersecurity through
-    professional development, mentorship,
-    networking, and career advancement.
-  </p>
+    <p>
+      My professional interests include Security
+      Operations Center (SOC) operations,
+      threat intelligence, incident response,
+      and defensive cybersecurity.
+    </p>
 
-  <p>
-    My goal is to begin my career in an
-    entry-level SOC Analyst or Cybersecurity
-    Analyst role.
-  </p>
+  </div>
+</section>
+
+<!-- CAREER OBJECTIVE -->
+<section class="section" id="objective">
+
+  <h2>Career Objective</h2>
+
+  <div class="objective-card">
+
+    <p>
+      Seeking an entry-level
+      <strong>SOC Analyst or Cybersecurity Analyst</strong>
+      position where I can apply my technical knowledge
+      and hands-on project experience in SIEM monitoring,
+      threat detection, log analysis, alert triage,
+      and incident investigation.
+    </p>
+
+    <p>
+      Committed to contributing to organizational
+      security, strengthening defensive capabilities,
+      and continuously developing expertise in
+      cybersecurity operations and incident response.
+    </p>
+
+    <div class="project-tags">
+      <span class="tag">SOC Analyst</span>
+      <span class="tag">Cybersecurity Analyst</span>
+      <span class="tag">Security Operations</span>
+      <span class="tag">Threat Detection</span>
+      <span class="tag">Incident Response</span>
+    </div>
+
+  </div>
 </section>
 
 <!-- SKILLS -->
 <section class="section" id="skills">
+
   <h2>Technical Skills</h2>
 
   <div class="skills-grid">
@@ -665,6 +740,7 @@ footer {
 
 <!-- CYBERSECURITY INTERNSHIP -->
 <section class="section" id="internship">
+
   <h2>Cybersecurity Internship Experience</h2>
 
   <div class="internship-card">
@@ -691,24 +767,29 @@ footer {
     <h4>Key Learning &amp; Experience</h4>
 
     <ul>
+
       <li>
         Studied common cybersecurity threats
         and attack methods.
       </li>
+
       <li>
         Learned network security concepts,
         including firewalls, VPNs, and
         network segmentation.
       </li>
+
       <li>
         Developed foundational knowledge of
         Security Operations Center (SOC)
         monitoring and incident response.
       </li>
+
       <li>
         Applied cybersecurity fundamentals
         through structured learning activities.
       </li>
+
     </ul>
 
     <div class="project-tags">
@@ -731,11 +812,13 @@ footer {
 
 <!-- PROJECTS -->
 <section class="section" id="projects">
+
   <h2>Cybersecurity Projects</h2>
 
   <p>
-    Explore my hands-on cybersecurity projects,
-    investigation methodologies, detection queries,
+    A collection of hands-on cybersecurity projects
+    demonstrating security monitoring, threat detection,
+    investigation methodologies, SIEM queries,
     and technical documentation.
   </p>
 
@@ -743,6 +826,7 @@ footer {
 
     <!-- PROJECT 1 -->
     <article class="project-card">
+
       <h3>1. Splunk SOC Brute-Force Detection</h3>
 
       <p>
@@ -772,10 +856,12 @@ footer {
         target="_blank"
         rel="noopener noreferrer"
       >View Project on GitHub</a>
+
     </article>
 
     <!-- PROJECT 2 -->
     <article class="project-card">
+
       <h3>
         2. Microsoft Sentinel SOC Monitoring
         &amp; Brute-Force Detection
@@ -788,23 +874,29 @@ footer {
       </p>
 
       <ul>
+
         <li>
           Configured Azure Log Analytics
           and Microsoft Sentinel.
         </li>
+
         <li>
           Created simulated events using
           KQL datatable.
         </li>
+
         <li>
           Detected six failed login attempts
           targeting the admin account.
         </li>
+
         <li>
           Correlated failed and successful
           authentication events.
         </li>
+
         <li>Created a SOC incident report.</li>
+
       </ul>
 
       <p class="project-note">
@@ -827,10 +919,12 @@ footer {
         target="_blank"
         rel="noopener noreferrer"
       >View Project on GitHub</a>
+
     </article>
 
     <!-- PROJECT 3 -->
     <article class="project-card">
+
       <h3>3. SOC Analyst Home Lab - Splunk</h3>
 
       <p>
@@ -858,10 +952,12 @@ footer {
         target="_blank"
         rel="noopener noreferrer"
       >View Project on GitHub</a>
+
     </article>
 
     <!-- PROJECT 4 -->
     <article class="project-card">
+
       <h3>
         4. Active Directory &amp;
         Windows Logs Detection Lab
@@ -893,10 +989,12 @@ footer {
         target="_blank"
         rel="noopener noreferrer"
       >View Project on GitHub</a>
+
     </article>
 
     <!-- PROJECT 5 -->
     <article class="project-card">
+
       <h3>5. Threat Hunting with Wireshark</h3>
 
       <p>
@@ -924,10 +1022,12 @@ footer {
         target="_blank"
         rel="noopener noreferrer"
       >View Project on GitHub</a>
+
     </article>
 
     <!-- PROJECT 6 -->
     <article class="project-card">
+
       <h3>6. Phishing Email Analysis</h3>
 
       <p>
@@ -955,10 +1055,12 @@ footer {
         target="_blank"
         rel="noopener noreferrer"
       >View Project on GitHub</a>
+
     </article>
 
     <!-- PROJECT 7 -->
     <article class="project-card">
+
       <h3>7. Credit Card Fraud Detection</h3>
 
       <p>
@@ -968,13 +1070,16 @@ footer {
       </p>
 
       <ul>
+
         <li>
           Analyzed over 284,000 anonymized
           transactions.
         </li>
+
         <li>Performed data preprocessing.</li>
         <li>Trained classification models.</li>
         <li>Developed a Tkinter interface.</li>
+
       </ul>
 
       <div class="project-tags">
@@ -987,6 +1092,7 @@ footer {
       <p class="pending-link">
         GitHub project link to be added
       </p>
+
     </article>
 
   </div>
@@ -994,9 +1100,11 @@ footer {
 
 <!-- CTF ACHIEVEMENTS -->
 <section class="section" id="ctf">
+
   <h2>CTF Challenges &amp; Achievements</h2>
 
   <div class="ctf-card">
+
     <h3>
       SentinelOne × WiCyS ThreatOps CTF Series 2026
     </h3>
@@ -1020,48 +1128,64 @@ footer {
     </p>
 
     <div class="ctf-gallery">
+
       <figure>
+
         <img
           src="image.png"
           alt="SentinelOne WiCyS ThreatOps CTF Badge"
           loading="lazy"
         >
+
         <figcaption>
           SentinelOne × WiCyS CTF Badge
         </figcaption>
+
       </figure>
 
       <figure>
+
         <img
           src="WhatsApp Image 2026-11-21 at 09.25.43.jpeg"
           alt="SentinelOne WiCyS CTF Results Screenshot"
           loading="lazy"
         >
+
         <figcaption>
           CTF Participation &amp; Results
         </figcaption>
+
       </figure>
+
     </div>
 
     <h3>Key Learning Outcomes</h3>
 
     <ul>
-      <li>Explored the SentinelOne security platform.</li>
+
+      <li>
+        Explored the SentinelOne security platform.
+      </li>
+
       <li>
         Practiced reviewing security alerts
         and suspicious activities.
       </li>
+
       <li>
         Developed analytical and problem-solving skills.
       </li>
+
       <li>
         Gained introductory exposure to
         threat investigation and SOC workflows.
       </li>
+
       <li>
         Strengthened my interest in pursuing
         a career as a SOC Analyst.
       </li>
+
     </ul>
 
     <div class="project-tags">
@@ -1078,11 +1202,13 @@ footer {
       experience. This is not a professional
       certification.
     </p>
+
   </div>
 </section>
 
 <!-- PROFESSIONAL MEMBERSHIPS -->
 <section class="section" id="memberships">
+
   <h2>Professional Memberships &amp; Affiliations</h2>
 
   <div class="membership-card">
@@ -1111,26 +1237,32 @@ footer {
     <h4>Professional Development Interests</h4>
 
     <ul>
+
       <li>
         Cybersecurity networking and
         community engagement.
       </li>
+
       <li>
         Security Operations Center (SOC)
         career development.
       </li>
+
       <li>
         Technical workshops, webinars,
         and cybersecurity learning opportunities.
       </li>
+
       <li>
         Mentorship and professional growth
         within the cybersecurity industry.
       </li>
+
       <li>
         Hands-on cybersecurity challenges,
         threat detection, and security research.
       </li>
+
     </ul>
 
     <p>
@@ -1148,26 +1280,32 @@ footer {
       <span class="tag">Continuous Learning</span>
     </div>
 
-    <a
-      href="https://www.wicys.org/"
-      class="btn"
-      target="_blank"
-      rel="noopener noreferrer"
-    >Visit WiCyS Official Website</a>
+    <div class="membership-buttons">
 
-    <a
-      href="#ctf"
-      class="btn btn-outline"
-    >View CTF Achievement</a>
+      <a
+        href="https://www.wicys.org/"
+        class="btn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Visit WiCyS Official Website</a>
+
+      <a
+        href="#ctf"
+        class="btn btn-outline"
+      >View CTF Achievement</a>
+
+    </div>
 
   </div>
 </section>
 
 <!-- EDUCATION -->
 <section class="section" id="education">
+
   <h2>Education</h2>
 
   <div class="education-item">
+
     <h3>Auburn University at Montgomery</h3>
 
     <p>
@@ -1178,11 +1316,13 @@ footer {
     </p>
 
     <p>Graduated: May 2026</p>
+
   </div>
 
   <hr>
 
   <div class="education-item">
+
     <h3>SRK Institute of Technology</h3>
 
     <p>
@@ -1193,49 +1333,29 @@ footer {
     </p>
 
     <p>Graduated: April 2023</p>
+
   </div>
-</section>
-
-<!-- CAREER OBJECTIVE -->
-<section class="section" id="objective">
-  <h2>Career Objective</h2>
-
-  <p>
-    Seeking an entry-level SOC Analyst
-    or Cybersecurity Analyst opportunity
-    where I can apply my hands-on project
-    experience in SIEM monitoring,
-    authentication log analysis,
-    threat detection, KQL, SPL,
-    and incident investigation.
-  </p>
-
-  <p>
-    I am committed to continuously
-    developing practical cybersecurity
-    skills through security projects,
-    hands-on labs, and technical learning.
-  </p>
-
-  <p>
-    As a member of Women in CyberSecurity
-    (WiCyS), I am interested in professional
-    development, mentorship, networking,
-    and contributing to the cybersecurity
-    community throughout my career.
-  </p>
 </section>
 
 <!-- CONTACT -->
 <section class="section" id="contact">
+
   <h2>Connect With Me</h2>
 
   <p>
-    Explore my cybersecurity projects
-    and professional profile.
+    I welcome opportunities to connect with
+    cybersecurity professionals, recruiters,
+    and organizations seeking entry-level
+    cybersecurity talent.
+  </p>
+
+  <p>
+    Explore my cybersecurity projects,
+    technical documentation, and professional profile.
   </p>
 
   <div class="contact-links">
+
     <a
       href="https://www.linkedin.com/in/fhariyazunnisa-abdul"
       class="btn"
@@ -1256,22 +1376,29 @@ footer {
       target="_blank"
       rel="noopener noreferrer"
     >Portfolio Repository</a>
+
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
+
   <p>© 2026 Fhariyazunnisa Abdul</p>
+
   <p>
     Cybersecurity Portfolio |
-    Aspiring SOC Analyst |
+    Security Operations |
+    Threat Detection |
     WiCyS Member
   </p>
+
 </footer>
 
 </div>
 </body>
 </html>
+
+
 
 
 
