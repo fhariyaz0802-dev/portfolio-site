@@ -1,10 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Fhariyazunnisa Abdul - Cybersecurity Portfolio, Security Operations, Threat Detection, SIEM Projects and WiCyS Membership">
 <title>Fhariyazunnisa Abdul | Cybersecurity Portfolio</title>
 
 <style>
@@ -16,8 +14,13 @@
   --border: #d7e4f0;
 }
 
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -34,6 +37,7 @@ body {
 }
 
 /* NAVIGATION */
+
 .navbar {
   background: white;
   border-radius: 20px;
@@ -73,6 +77,7 @@ body {
 }
 
 /* HERO */
+
 .hero {
   background: white;
   border-radius: 22px;
@@ -94,7 +99,9 @@ body {
   flex-shrink: 0;
 }
 
-.hero-content { flex: 1; }
+.hero-content {
+  flex: 1;
+}
 
 .hero h1 {
   color: var(--blue);
@@ -151,7 +158,9 @@ body {
   transition: 0.2s;
 }
 
-.btn:hover { background: var(--darkblue); }
+.btn:hover {
+  background: var(--darkblue);
+}
 
 .btn-outline {
   background: white;
@@ -165,6 +174,7 @@ body {
 }
 
 /* SECTIONS */
+
 .section {
   background: white;
   padding: 40px;
@@ -182,9 +192,12 @@ body {
   padding-bottom: 12px;
 }
 
-.section p { font-size: 16px; }
+.section p {
+  font-size: 16px;
+}
 
 /* ABOUT ME */
+
 .about-content {
   font-size: 17px;
   line-height: 1.85;
@@ -195,6 +208,7 @@ body {
 }
 
 /* CAREER OBJECTIVE */
+
 .objective-card {
   background: #f7faff;
   border: 1px solid var(--border);
@@ -208,6 +222,7 @@ body {
 }
 
 /* SKILLS */
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -226,9 +241,12 @@ body {
   margin-top: 0;
 }
 
-.skill-card p { margin-bottom: 0; }
+.skill-card p {
+  margin-bottom: 0;
+}
 
 /* INTERNSHIP */
+
 .internship-card {
   background: #f7faff;
   border: 1px solid var(--border);
@@ -256,10 +274,16 @@ body {
   font-weight: bold;
 }
 
-.internship-card ul { padding-left: 22px; }
-.internship-card li { margin-bottom: 10px; }
+.internship-card ul {
+  padding-left: 22px;
+}
+
+.internship-card li {
+  margin-bottom: 10px;
+}
 
 /* PROJECTS */
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -287,9 +311,18 @@ body {
   font-size: 21px;
 }
 
-.project-card p { font-size: 15px; }
-.project-card ul { padding-left: 20px; font-size: 14px; }
-.project-card li { margin-bottom: 7px; }
+.project-card p {
+  font-size: 15px;
+}
+
+.project-card ul {
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.project-card li {
+  margin-bottom: 7px;
+}
 
 .project-tags {
   display: flex;
@@ -316,7 +349,9 @@ body {
   padding-top: 15px;
 }
 
-.project-link:hover { text-decoration: underline; }
+.project-link:hover {
+  text-decoration: underline;
+}
 
 .project-note {
   background: #f1f7ff;
@@ -333,7 +368,40 @@ body {
   font-weight: bold;
 }
 
+/* CYBERSECURITY ARTICLES */
+
+.article-card {
+  background: #f7faff;
+  border: 1px solid var(--border);
+  border-left: 5px solid var(--blue);
+  border-radius: 14px;
+  padding: 30px;
+}
+
+.article-card h3 {
+  color: var(--blue);
+  font-size: 24px;
+  margin: 12px 0;
+}
+
+.article-series {
+  color: var(--darkblue);
+  font-weight: bold;
+}
+
+.article-meta {
+  color: #617086;
+}
+
+.article-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
 /* CTF ACHIEVEMENTS */
+
 .ctf-card {
   background: #f7faff;
   border: 1px solid var(--border);
@@ -383,7 +451,8 @@ body {
   margin-top: 12px;
 }
 
-/* PROFESSIONAL MEMBERSHIPS */
+/* MEMBERSHIPS */
+
 .membership-card {
   background: #f7faff;
   border: 1px solid var(--border);
@@ -426,16 +495,22 @@ body {
 }
 
 /* EDUCATION */
-.education-item { margin-bottom: 25px; }
+
+.education-item {
+  margin-bottom: 25px;
+}
 
 .education-item h3 {
   color: var(--darkblue);
   margin-bottom: 6px;
 }
 
-.education-item p { margin: 5px 0; }
+.education-item p {
+  margin: 5px 0;
+}
 
 /* CONTACT */
+
 .contact-links {
   display: flex;
   flex-wrap: wrap;
@@ -444,6 +519,7 @@ body {
 }
 
 /* FOOTER */
+
 footer {
   text-align: center;
   padding: 30px;
@@ -451,9 +527,13 @@ footer {
   font-size: 14px;
 }
 
-/* MOBILE */
+/* MOBILE RESPONSIVE DESIGN */
+
 @media (max-width: 850px) {
-  .navbar { padding: 22px; }
+
+  .navbar {
+    padding: 22px;
+  }
 
   .hero {
     flex-direction: column;
@@ -467,12 +547,20 @@ footer {
     height: 210px;
   }
 
-  .hero-buttons { justify-content: center; }
-  .section { padding: 25px; }
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .section {
+    padding: 25px;
+  }
 }
 
 @media (max-width: 600px) {
-  .ctf-gallery { grid-template-columns: 1fr; }
+
+  .ctf-gallery {
+    grid-template-columns: 1fr;
+  }
 
   .ctf-gallery img {
     height: auto;
@@ -480,43 +568,74 @@ footer {
   }
 
   .membership-card,
-  .objective-card {
+  .objective-card,
+  .article-card {
     padding: 20px;
   }
 }
 
 @media (max-width: 500px) {
-  .container { padding: 0 14px; }
-  .nav-links { gap: 12px; }
-  .nav-links a { font-size: 14px; }
-  .project-grid { grid-template-columns: 1fr; }
-  .hero h1 { font-size: 33px; }
-  .hero-subtitle { font-size: 20px; }
+
+  .container {
+    padding: 0 14px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .project-grid,
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 33px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+  }
 }
+
 </style>
 </head>
 
 <body>
+
 <div class="container">
 
 <!-- NAVIGATION -->
+
 <nav class="navbar">
-  <a href="#home" class="logo">Fhariyazunnisa Abdul</a>
+
+  <a href="#home" class="logo">
+    Fhariyazunnisa Abdul
+  </a>
 
   <div class="nav-links">
+
     <a href="#about">About</a>
     <a href="#objective">Career Objective</a>
     <a href="#skills">Skills</a>
     <a href="#internship">Internship</a>
     <a href="#projects">Projects</a>
+    <a href="#articles">Articles</a>
     <a href="#ctf">CTF Achievements</a>
     <a href="#memberships">Memberships</a>
     <a href="#education">Education</a>
     <a href="#contact">Contact</a>
+
   </div>
+
 </nav>
 
-<!-- HERO -->
+<!-- HERO SECTION -->
+
 <section class="hero" id="home">
 
   <img
@@ -558,25 +677,36 @@ footer {
         View My Projects
       </a>
 
+      <a href="#articles" class="btn btn-outline">
+        Read My Articles
+      </a>
+
       <a
         href="https://github.com/fhariyaz0802-dev"
         target="_blank"
         rel="noopener noreferrer"
         class="btn btn-outline"
-      >GitHub Profile</a>
+      >
+        GitHub Profile
+      </a>
 
       <a
         href="https://www.linkedin.com/in/fhariyazunnisa-abdul"
         target="_blank"
         rel="noopener noreferrer"
         class="btn btn-outline"
-      >LinkedIn</a>
+      >
+        LinkedIn
+      </a>
 
     </div>
+
   </div>
+
 </section>
 
 <!-- ABOUT ME -->
+
 <section class="section" id="about">
 
   <h2>About Me</h2>
@@ -613,10 +743,23 @@ footer {
       <strong>Women in CyberSecurity (WiCyS)</strong>,
       I am committed to continuous professional
       development and cybersecurity community
-      engagement. I also participated in the
+      engagement.
+    </p>
+
+    <p>
+      I also participated in the
       <strong>SentinelOne × WiCyS ThreatOps CTF
       Series 2026</strong>, achieving a final
       score of <strong>850 points.</strong>
+    </p>
+
+    <p>
+      In addition to hands-on projects, I have started
+      a cybersecurity writing series,
+      <strong>Inside the SOC — Beyond the Alert</strong>,
+      where I explore publicly reported security incidents,
+      develop my technical understanding, and share
+      insights from my learning journey.
     </p>
 
     <p>
@@ -627,9 +770,11 @@ footer {
     </p>
 
   </div>
+
 </section>
 
 <!-- CAREER OBJECTIVE -->
+
 <section class="section" id="objective">
 
   <h2>Career Objective</h2>
@@ -653,17 +798,21 @@ footer {
     </p>
 
     <div class="project-tags">
+
       <span class="tag">SOC Analyst</span>
       <span class="tag">Cybersecurity Analyst</span>
       <span class="tag">Security Operations</span>
       <span class="tag">Threat Detection</span>
       <span class="tag">Incident Response</span>
+
     </div>
 
   </div>
+
 </section>
 
-<!-- SKILLS -->
+<!-- TECHNICAL SKILLS -->
+
 <section class="section" id="skills">
 
   <h2>Technical Skills</h2>
@@ -671,74 +820,99 @@ footer {
   <div class="skills-grid">
 
     <div class="skill-card">
+
       <h3>SIEM &amp; Monitoring</h3>
+
       <p>
         Splunk, Microsoft Sentinel, SPL, KQL,
         Security Event Monitoring,
         Authentication Log Analysis
       </p>
+
     </div>
 
     <div class="skill-card">
+
       <h3>Security Operations</h3>
+
       <p>
         SOC Fundamentals, Threat Detection,
         Brute-Force Pattern Detection,
         Incident Investigation,
         Event Correlation, SOC Reporting
       </p>
+
     </div>
 
     <div class="skill-card">
+
       <h3>Network Security</h3>
+
       <p>
         Wireshark, DNS Analysis,
         Packet Inspection,
         Network Traffic Analysis,
         Threat Hunting Fundamentals
       </p>
+
     </div>
 
     <div class="skill-card">
+
       <h3>Endpoint Security</h3>
+
       <p>
         Windows Event Viewer, Sysmon,
         Active Directory,
         Windows Authentication Events,
         Windows 11
       </p>
+
     </div>
 
     <div class="skill-card">
+
       <h3>Cloud Security</h3>
+
       <p>
         Microsoft Azure,
         Azure Log Analytics,
         Microsoft Sentinel
       </p>
+
     </div>
 
     <div class="skill-card">
+
       <h3>Programming &amp; Data</h3>
+
       <p>
         Python, Pandas, NumPy,
         Scikit-learn, SQL Fundamentals
       </p>
+
     </div>
 
     <div class="skill-card">
-      <h3>Documentation</h3>
+
+      <h3>Documentation &amp; Research</h3>
+
       <p>
         GitHub, Markdown,
         Incident Reporting,
-        Technical Documentation
+        Technical Documentation,
+        Cybersecurity Case Studies,
+        Technical Writing
       </p>
+
     </div>
 
   </div>
+
 </section>
 
-<!-- CYBERSECURITY INTERNSHIP -->
+<!-- INTERNSHIP -->
+
 <section class="section" id="internship">
 
   <h2>Cybersecurity Internship Experience</h2>
@@ -793,12 +967,14 @@ footer {
     </ul>
 
     <div class="project-tags">
+
       <span class="tag">Cybersecurity</span>
       <span class="tag">Network Security</span>
       <span class="tag">Firewalls</span>
       <span class="tag">VPN</span>
       <span class="tag">SOC Fundamentals</span>
       <span class="tag">Incident Response</span>
+
     </div>
 
     <p class="project-note">
@@ -808,9 +984,11 @@ footer {
     </p>
 
   </div>
+
 </section>
 
-<!-- PROJECTS -->
+<!-- CYBERSECURITY PROJECTS -->
+
 <section class="section" id="projects">
 
   <h2>Cybersecurity Projects</h2>
@@ -825,6 +1003,7 @@ footer {
   <div class="project-grid">
 
     <!-- PROJECT 1 -->
+
     <article class="project-card">
 
       <h3>1. Splunk SOC Brute-Force Detection</h3>
@@ -836,18 +1015,22 @@ footer {
       </p>
 
       <ul>
+
         <li>Analyzed Windows Event ID 4625.</li>
         <li>Investigated repeated failed logins.</li>
         <li>Developed SPL detection queries.</li>
         <li>Created a Splunk monitoring dashboard.</li>
         <li>Documented investigation findings.</li>
+
       </ul>
 
       <div class="project-tags">
+
         <span class="tag">Splunk</span>
         <span class="tag">SPL</span>
         <span class="tag">Windows Logs</span>
         <span class="tag">SIEM</span>
+
       </div>
 
       <a
@@ -855,11 +1038,14 @@ footer {
         href="https://github.com/fhariyaz0802-dev/Splunk-SOC-Brute-Force-Detection"
         target="_blank"
         rel="noopener noreferrer"
-      >View Project on GitHub</a>
+      >
+        View Project on GitHub
+      </a>
 
     </article>
 
     <!-- PROJECT 2 -->
+
     <article class="project-card">
 
       <h3>
@@ -907,10 +1093,12 @@ footer {
       </p>
 
       <div class="project-tags">
+
         <span class="tag">Microsoft Sentinel</span>
         <span class="tag">KQL</span>
         <span class="tag">Azure</span>
         <span class="tag">SOC Investigation</span>
+
       </div>
 
       <a
@@ -918,11 +1106,14 @@ footer {
         href="https://github.com/fhariyaz0802-dev/Microsoft-Sentinel-SOC-Detection"
         target="_blank"
         rel="noopener noreferrer"
-      >View Project on GitHub</a>
+      >
+        View Project on GitHub
+      </a>
 
     </article>
 
     <!-- PROJECT 3 -->
+
     <article class="project-card">
 
       <h3>3. SOC Analyst Home Lab - Splunk</h3>
@@ -934,86 +1125,102 @@ footer {
       </p>
 
       <ul>
-        <li>Security monitoring concepts</li>
-        <li>Splunk log analysis</li>
-        <li>SIEM investigation workflows</li>
-        <li>Security detection fundamentals</li>
+
+        <li>Explored security event monitoring.</li>
+        <li>Analyzed authentication activity.</li>
+        <li>Practiced SPL search queries.</li>
+        <li>Reviewed suspicious event patterns.</li>
+        <li>Documented security findings.</li>
+
       </ul>
 
       <div class="project-tags">
+
         <span class="tag">Splunk</span>
+        <span class="tag">SIEM</span>
         <span class="tag">SOC Lab</span>
         <span class="tag">Log Analysis</span>
+
       </div>
 
       <a
         class="project-link"
-        href="https://github.com/fhariyaz0802-dev/SOC-Analyst-Home-Lab-Splunk"
+        href="https://github.com/fhariyaz0802-dev?tab=repositories"
         target="_blank"
         rel="noopener noreferrer"
-      >View Project on GitHub</a>
+      >
+        Explore GitHub Projects
+      </a>
 
     </article>
 
     <!-- PROJECT 4 -->
+
     <article class="project-card">
 
-      <h3>
-        4. Active Directory &amp;
-        Windows Logs Detection Lab
-      </h3>
+      <h3>4. Windows Security Log Analysis</h3>
 
       <p>
-        Windows security monitoring project
-        focused on authentication events,
-        Active Directory concepts,
-        and suspicious login detection.
+        Explored Windows security events
+        to identify suspicious authentication
+        and account activity.
       </p>
 
       <ul>
-        <li>Windows Security Event Logs</li>
-        <li>Active Directory security concepts</li>
-        <li>Authentication monitoring</li>
-        <li>Security event investigation</li>
+
+        <li>Reviewed Windows authentication events.</li>
+        <li>Analyzed successful and failed logins.</li>
+        <li>Explored suspicious account activity.</li>
+        <li>Practiced security event investigation.</li>
+
       </ul>
 
       <div class="project-tags">
-        <span class="tag">Active Directory</span>
+
+        <span class="tag">Windows Event Viewer</span>
         <span class="tag">Windows Logs</span>
-        <span class="tag">Detection</span>
+        <span class="tag">Security Analysis</span>
+
       </div>
 
       <a
         class="project-link"
-        href="https://github.com/fhariyaz0802-dev/Active-Directory-Windows-Logs-Detection-Lab"
+        href="https://github.com/fhariyaz0802-dev?tab=repositories"
         target="_blank"
         rel="noopener noreferrer"
-      >View Project on GitHub</a>
+      >
+        Explore GitHub Projects
+      </a>
 
     </article>
 
     <!-- PROJECT 5 -->
+
     <article class="project-card">
 
       <h3>5. Threat Hunting with Wireshark</h3>
 
       <p>
-        Analyzed network traffic using Wireshark
-        to investigate DNS activity and identify
-        unusual network communication patterns.
+        Analyzed network traffic to explore
+        suspicious communication patterns
+        and network security concepts.
       </p>
 
       <ul>
-        <li>Captured and analyzed packets.</li>
-        <li>Investigated DNS query patterns.</li>
-        <li>Examined unusual network activity.</li>
-        <li>Documented potential indicators.</li>
+
+        <li>Captured and analyzed network packets.</li>
+        <li>Investigated DNS traffic.</li>
+        <li>Reviewed network communication patterns.</li>
+        <li>Practiced network threat hunting.</li>
+
       </ul>
 
       <div class="project-tags">
+
         <span class="tag">Wireshark</span>
         <span class="tag">DNS</span>
         <span class="tag">Packet Analysis</span>
+
       </div>
 
       <a
@@ -1021,11 +1228,14 @@ footer {
         href="https://github.com/fhariyaz0802-dev/Threat-Hunting-Wireshark"
         target="_blank"
         rel="noopener noreferrer"
-      >View Project on GitHub</a>
+      >
+        View Project on GitHub
+      </a>
 
     </article>
 
     <!-- PROJECT 6 -->
+
     <article class="project-card">
 
       <h3>6. Phishing Email Analysis</h3>
@@ -1037,16 +1247,20 @@ footer {
       </p>
 
       <ul>
+
         <li>Analyzed suspicious email headers.</li>
         <li>Investigated sender domains.</li>
         <li>Examined suspicious URLs.</li>
         <li>Reviewed SPF, DKIM, and DMARC.</li>
+
       </ul>
 
       <div class="project-tags">
+
         <span class="tag">VirusTotal</span>
         <span class="tag">Email Security</span>
         <span class="tag">SPF/DKIM/DMARC</span>
+
       </div>
 
       <a
@@ -1054,11 +1268,14 @@ footer {
         href="https://github.com/fhariyaz0802-dev/phishing-email-analysis-project"
         target="_blank"
         rel="noopener noreferrer"
-      >View Project on GitHub</a>
+      >
+        View Project on GitHub
+      </a>
 
     </article>
 
     <!-- PROJECT 7 -->
+
     <article class="project-card">
 
       <h3>7. Credit Card Fraud Detection</h3>
@@ -1083,10 +1300,12 @@ footer {
       </ul>
 
       <div class="project-tags">
+
         <span class="tag">Python</span>
         <span class="tag">Pandas</span>
         <span class="tag">Scikit-learn</span>
         <span class="tag">Machine Learning</span>
+
       </div>
 
       <p class="pending-link">
@@ -1096,9 +1315,138 @@ footer {
     </article>
 
   </div>
+
+</section>
+
+<!-- CYBERSECURITY ARTICLES AND CASE STUDIES -->
+
+<section class="section" id="articles">
+
+  <h2>Cybersecurity Articles &amp; Case Studies</h2>
+
+  <p>
+    Exploring real-world cybersecurity incidents,
+    security operations, threat detection, and
+    incident response through independent educational
+    case studies and continuous learning.
+  </p>
+
+  <article class="article-card">
+
+    <p class="article-series">
+      Inside the SOC — Beyond the Alert | Case 001
+    </p>
+
+    <h3>
+      We Trust Uber With Our Data.
+      But Who Else Has Access?
+    </h3>
+
+    <p class="article-meta">
+      November 24, 2026 | 5 min read | Medium
+    </p>
+
+    <p>
+      An independent educational case study exploring
+      Uber's reported data breach, third-party security
+      risks, compromised credentials, hypothetical SOC
+      investigation approaches, and preventive
+      cybersecurity controls.
+    </p>
+
+    <h4>Key Topics Explored</h4>
+
+    <ul>
+
+      <li>
+        Third-party security risks and vendor access.
+      </li>
+
+      <li>
+        Compromised credentials and unauthorized access.
+      </li>
+
+      <li>
+        Security monitoring and threat detection.
+      </li>
+
+      <li>
+        Incident investigation from a SOC analyst's
+        perspective.
+      </li>
+
+      <li>
+        Preventive cybersecurity controls and
+        incident response.
+      </li>
+
+    </ul>
+
+    <h4>My Learning Experience</h4>
+
+    <p>
+      This is my first cybersecurity article and
+      the beginning of my technical writing journey.
+      With the help of ChatGPT, I learned how to
+      structure an article, explore publicly reported
+      cybersecurity incidents, organize technical
+      information, and communicate my understanding.
+    </p>
+
+    <p>
+      Through this series, I aim to strengthen my
+      analytical thinking, cybersecurity knowledge,
+      research skills, and technical communication
+      while sharing what I learn along the way.
+    </p>
+
+    <div class="project-tags">
+
+      <span class="tag">Third-Party Risk</span>
+      <span class="tag">Credential Security</span>
+      <span class="tag">Threat Detection</span>
+      <span class="tag">SOC Monitoring</span>
+      <span class="tag">Incident Response</span>
+      <span class="tag">Technical Writing</span>
+
+    </div>
+
+    <div class="article-buttons">
+
+      <a
+        href="https://medium.com/@fhariyaz0802/we-trust-uber-with-our-data-but-who-else-has-access-d048aa662d5e"
+        class="btn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Read Full Article
+      </a>
+
+      <a
+        href="https://medium.com/@fhariyaz0802"
+        class="btn btn-outline"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View Medium Profile
+      </a>
+
+    </div>
+
+    <p class="project-note">
+      Independent educational case study based on
+      publicly available information and AI-assisted
+      writing. The SOC investigation approach is
+      hypothetical and does not represent professional
+      involvement in the actual incident.
+    </p>
+
+  </article>
+
 </section>
 
 <!-- CTF ACHIEVEMENTS -->
+
 <section class="section" id="ctf">
 
   <h2>CTF Challenges &amp; Achievements</h2>
@@ -1189,12 +1537,14 @@ footer {
     </ul>
 
     <div class="project-tags">
+
       <span class="tag">SentinelOne</span>
       <span class="tag">WiCyS</span>
       <span class="tag">CTF</span>
       <span class="tag">ThreatOps</span>
       <span class="tag">Security Analysis</span>
       <span class="tag">SOC Fundamentals</span>
+
     </div>
 
     <p class="project-note">
@@ -1204,9 +1554,11 @@ footer {
     </p>
 
   </div>
+
 </section>
 
 <!-- PROFESSIONAL MEMBERSHIPS -->
+
 <section class="section" id="memberships">
 
   <h2>Professional Memberships &amp; Affiliations</h2>
@@ -1273,11 +1625,13 @@ footer {
     </p>
 
     <div class="project-tags">
+
       <span class="tag">WiCyS</span>
       <span class="tag">Professional Membership</span>
       <span class="tag">Cybersecurity Community</span>
       <span class="tag">Professional Development</span>
       <span class="tag">Continuous Learning</span>
+
     </div>
 
     <div class="membership-buttons">
@@ -1287,19 +1641,22 @@ footer {
         class="btn"
         target="_blank"
         rel="noopener noreferrer"
-      >Visit WiCyS Official Website</a>
+      >
+        Visit WiCyS Official Website
+      </a>
 
-      <a
-        href="#ctf"
-        class="btn btn-outline"
-      >View CTF Achievement</a>
+      <a href="#ctf" class="btn btn-outline">
+        View CTF Achievement
+      </a>
 
     </div>
 
   </div>
+
 </section>
 
 <!-- EDUCATION -->
+
 <section class="section" id="education">
 
   <h2>Education</h2>
@@ -1335,9 +1692,11 @@ footer {
     <p>Graduated: April 2023</p>
 
   </div>
+
 </section>
 
 <!-- CONTACT -->
+
 <section class="section" id="contact">
 
   <h2>Connect With Me</h2>
@@ -1351,7 +1710,8 @@ footer {
 
   <p>
     Explore my cybersecurity projects,
-    technical documentation, and professional profile.
+    technical documentation, published articles,
+    and professional profile.
   </p>
 
   <div class="contact-links">
@@ -1361,26 +1721,50 @@ footer {
       class="btn"
       target="_blank"
       rel="noopener noreferrer"
-    >LinkedIn</a>
+    >
+      LinkedIn
+    </a>
 
     <a
       href="https://github.com/fhariyaz0802-dev"
       class="btn btn-outline"
       target="_blank"
       rel="noopener noreferrer"
-    >GitHub</a>
+    >
+      GitHub
+    </a>
 
     <a
       href="https://github.com/fhariyaz0802-dev/portfolio-site"
       class="btn btn-outline"
       target="_blank"
       rel="noopener noreferrer"
-    >Portfolio Repository</a>
+    >
+      Portfolio Repository
+    </a>
+
+    <a
+      href="https://medium.com/@fhariyaz0802"
+      class="btn btn-outline"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Medium Profile
+    </a>
+
+    <a
+      href="mailto:fhariyaz0802@gmail.com"
+      class="btn btn-outline"
+    >
+      Email Me
+    </a>
 
   </div>
+
 </section>
 
 <!-- FOOTER -->
+
 <footer>
 
   <p>© 2026 Fhariyazunnisa Abdul</p>
@@ -1392,9 +1776,14 @@ footer {
     WiCyS Member
   </p>
 
+  <p>
+    Learning, Exploring, and Growing in Cybersecurity
+  </p>
+
 </footer>
 
 </div>
+
 </body>
 </html>
 
